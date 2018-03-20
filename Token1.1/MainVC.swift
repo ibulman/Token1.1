@@ -20,17 +20,25 @@ class MainVC: UIViewController {
     }
     @objc func showScreen1(){
         performSegue(withIdentifier: "ShowScreen1", sender: nil)
+        print(self.navigationController?.viewControllers)
     }
     @objc func showScreen2(){
         performSegue(withIdentifier: "ShowScreen2", sender: nil)
+        print(self.navigationController?.viewControllers)
+
     }
     @objc func showScreen3(){
         performSegue(withIdentifier: "ShowScreen3", sender: nil)
+        print(self.navigationController?.viewControllers)
+
     }
     @objc func showMainScreen(){
         var numberOfControllers = self.navigationController?.viewControllers.count
         while numberOfControllers! > 1{
             self.navigationController?.viewControllers.popLast()
+            numberOfControllers = self.navigationController?.viewControllers.count
+            print(self.navigationController?.viewControllers)
+
             
         }
 

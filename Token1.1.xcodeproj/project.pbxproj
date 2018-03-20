@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CA74C4AEDF7E287DE84CDAA /* Pods_Token1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */; };
+		8A197EB2205F219E00EA7D46 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB1205F219E00EA7D46 /* User.swift */; };
+		8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB3205F222700EA7D46 /* Sweet.swift */; };
+		8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB6205F270F00EA7D46 /* addPostViewController.swift */; };
 		8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B612034B82F00336BFD /* AppDelegate.swift */; };
 		8A236B642034B82F00336BFD /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B632034B82F00336BFD /* ContainerVC.swift */; };
 		8A236B672034B82F00336BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A236B652034B82F00336BFD /* Main.storyboard */; };
@@ -19,6 +23,7 @@
 		8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70B204250060010B773 /* TrackerViewController.swift */; };
 		8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70F2042546B0010B773 /* ForumViewController.swift */; };
 		8A53F712204254750010B773 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F711204254750010B773 /* InfoViewController.swift */; };
+		8A6AC60B205EFE06009805CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		485780EA4A4189518EFC0132 /* Pods-Token1.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Token1.1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1.debug.xcconfig"; sourceTree = "<group>"; };
+		804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Token1_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A197EB1205F219E00EA7D46 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A197EB3205F222700EA7D46 /* Sweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweet.swift; sourceTree = "<group>"; };
+		8A197EB6205F270F00EA7D46 /* addPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPostViewController.swift; sourceTree = "<group>"; };
 		8A236B5E2034B82F00336BFD /* Token1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Token1.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A236B612034B82F00336BFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A236B632034B82F00336BFD /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
@@ -57,6 +67,8 @@
 		8A53F70B204250060010B773 /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
 		8A53F70F2042546B0010B773 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		8A53F711204254750010B773 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF1AC8C7A8EC7D2B743ACFF8 /* Pods-Token1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Token1.1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA74C4AEDF7E287DE84CDAA /* Pods_Token1_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +97,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BC6EE83BDA84C5B4F415A5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A197EB5205F24B600EA7D46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A197EB3205F222700EA7D46 /* Sweet.swift */,
+				8A197EB1205F219E00EA7D46 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8A236B552034B82F00336BFD = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +121,8 @@
 				8A236B752034B82F00336BFD /* Token1.1Tests */,
 				8A236B802034B82F00336BFD /* Token1.1UITests */,
 				8A236B5F2034B82F00336BFD /* Products */,
+				F3FE1373A4DE399A7C4DFE4A /* Pods */,
+				4BC6EE83BDA84C5B4F415A5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,9 +140,11 @@
 			isa = PBXGroup;
 			children = (
 				8A236B612034B82F00336BFD /* AppDelegate.swift */,
+				8A197EB5205F24B600EA7D46 /* Model */,
 				8A236B632034B82F00336BFD /* ContainerVC.swift */,
 				8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */,
 				8A236B652034B82F00336BFD /* Main.storyboard */,
+				8A197EB6205F270F00EA7D46 /* addPostViewController.swift */,
 				8A53F70F2042546B0010B773 /* ForumViewController.swift */,
 				8A53F711204254750010B773 /* InfoViewController.swift */,
 				8A53F7032041E4810010B773 /* MainVC.swift */,
@@ -118,6 +152,7 @@
 				8A236B682034B82F00336BFD /* Assets.xcassets */,
 				8A236B6A2034B82F00336BFD /* LaunchScreen.storyboard */,
 				8A236B6D2034B82F00336BFD /* Info.plist */,
+				8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */,
 			);
 			path = Token1.1;
 			sourceTree = "<group>";
@@ -140,6 +175,15 @@
 			path = Token1.1UITests;
 			sourceTree = "<group>";
 		};
+		F3FE1373A4DE399A7C4DFE4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				485780EA4A4189518EFC0132 /* Pods-Token1.1.debug.xcconfig */,
+				FF1AC8C7A8EC7D2B743ACFF8 /* Pods-Token1.1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A236B862034B82F00336BFD /* Build configuration list for PBXNativeTarget "Token1.1" */;
 			buildPhases = (
+				7CA5675AA9A7BD522F45CE49 /* [CP] Check Pods Manifest.lock */,
 				8A236B5A2034B82F00336BFD /* Sources */,
 				8A236B5B2034B82F00336BFD /* Frameworks */,
 				8A236B5C2034B82F00336BFD /* Resources */,
+				CE58D194BFDBD40934D00BEA /* [CP] Embed Pods Frameworks */,
+				A2C5712F700B1ED2D9B59C0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A236B6C2034B82F00336BFD /* LaunchScreen.storyboard in Resources */,
+				8A6AC60B205EFE06009805CF /* GoogleService-Info.plist in Resources */,
 				8A236B692034B82F00336BFD /* Assets.xcassets in Resources */,
 				8A236B672034B82F00336BFD /* Main.storyboard in Resources */,
 			);
@@ -269,6 +317,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7CA5675AA9A7BD522F45CE49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Token1.1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C5712F700B1ED2D9B59C0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE58D194BFDBD40934D00BEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A236B5A2034B82F00336BFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -278,8 +386,11 @@
 				8A236B642034B82F00336BFD /* ContainerVC.swift in Sources */,
 				8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */,
 				8A53F712204254750010B773 /* InfoViewController.swift in Sources */,
+				8A197EB2205F219E00EA7D46 /* User.swift in Sources */,
 				8A53F7042041E4810010B773 /* MainVC.swift in Sources */,
+				8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */,
 				8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */,
+				8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */,
 				8A236B902034B9BB00336BFD /* SideMenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +555,7 @@
 		};
 		8A236B872034B82F00336BFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 485780EA4A4189518EFC0132 /* Pods-Token1.1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +570,7 @@
 		};
 		8A236B882034B82F00336BFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1AC8C7A8EC7D2B743ACFF8 /* Pods-Token1.1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

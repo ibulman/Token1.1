@@ -7,15 +7,53 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
-class ForumViewController: UIViewController {
+
+class ForumViewController: UITableViewController {
+    var dbRef: DatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
-        // Do any additional setup after loading the view.
+        dbRef = Database.database().reference().child("post-items")
     }
-
+    
+    
+    @IBAction func addPost(_ sender: Any) {
+        let postAlert = UIAlertController(title: "New Post", message: "Enter your post", preferredStyle: .alert)
+        postAlert.addTextField{ (textField:UITextField) in
+            textField.placeholder = "Your post"
+        }
+        postAlert.addAction(UIAlertAction(title: "Send", style: .default, handler: {(action:UIAlertAction) in
+           if let postContent = postAlert.textFields?.first?.text{
+                let post = Post(content: postContent, addedByUser: "User")
+                
+                let postRef = self.dbRef.child(postContent.lowercased())
+                
+                postRef.setValue(post.toAnyObject())
+            }
+        }))
+        self.present(postAlert, animated: true,completion: nil)
+    }
+    
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        // Configure the cell...
+        
+        return cell
+    }
     @objc func MoreTapped(){
         print("TOGGLE SIDE MENU")
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
