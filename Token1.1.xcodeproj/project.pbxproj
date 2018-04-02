@@ -8,22 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0CA74C4AEDF7E287DE84CDAA /* Pods_Token1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */; };
-		8A197EB2205F219E00EA7D46 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB1205F219E00EA7D46 /* User.swift */; };
-		8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB3205F222700EA7D46 /* Sweet.swift */; };
-		8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB6205F270F00EA7D46 /* addPostViewController.swift */; };
 		8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B612034B82F00336BFD /* AppDelegate.swift */; };
-		8A236B642034B82F00336BFD /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B632034B82F00336BFD /* ContainerVC.swift */; };
+		8A236B642034B82F00336BFD /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B632034B82F00336BFD /* ContainerViewController.swift */; };
 		8A236B672034B82F00336BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A236B652034B82F00336BFD /* Main.storyboard */; };
 		8A236B692034B82F00336BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A236B682034B82F00336BFD /* Assets.xcassets */; };
 		8A236B6C2034B82F00336BFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A236B6A2034B82F00336BFD /* LaunchScreen.storyboard */; };
 		8A236B772034B82F00336BFD /* Token1_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B762034B82F00336BFD /* Token1_1Tests.swift */; };
 		8A236B822034B82F00336BFD /* Token1_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B812034B82F00336BFD /* Token1_1UITests.swift */; };
-		8A236B902034B9BB00336BFD /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */; };
-		8A53F7042041E4810010B773 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F7032041E4810010B773 /* MainVC.swift */; };
+		8A236B902034B9BB00336BFD /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B8F2034B9BB00336BFD /* SideMenuViewController.swift */; };
+		8A53F7042041E4810010B773 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F7032041E4810010B773 /* MainViewController.swift */; };
 		8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70B204250060010B773 /* TrackerViewController.swift */; };
 		8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70F2042546B0010B773 /* ForumViewController.swift */; };
-		8A53F712204254750010B773 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F711204254750010B773 /* InfoViewController.swift */; };
-		8A6AC60B205EFE06009805CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +41,9 @@
 /* Begin PBXFileReference section */
 		485780EA4A4189518EFC0132 /* Pods-Token1.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Token1.1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1.debug.xcconfig"; sourceTree = "<group>"; };
 		804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Token1_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A197EB1205F219E00EA7D46 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		8A197EB3205F222700EA7D46 /* Sweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweet.swift; sourceTree = "<group>"; };
-		8A197EB6205F270F00EA7D46 /* addPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPostViewController.swift; sourceTree = "<group>"; };
 		8A236B5E2034B82F00336BFD /* Token1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Token1.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A236B612034B82F00336BFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A236B632034B82F00336BFD /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		8A236B632034B82F00336BFD /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		8A236B662034B82F00336BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A236B682034B82F00336BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A236B6B2034B82F00336BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,12 +54,10 @@
 		8A236B7D2034B82F00336BFD /* Token1.1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Token1.1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A236B812034B82F00336BFD /* Token1_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token1_1UITests.swift; sourceTree = "<group>"; };
 		8A236B832034B82F00336BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
-		8A53F7032041E4810010B773 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		8A236B8F2034B9BB00336BFD /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		8A53F7032041E4810010B773 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8A53F70B204250060010B773 /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
 		8A53F70F2042546B0010B773 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
-		8A53F711204254750010B773 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF1AC8C7A8EC7D2B743ACFF8 /* Pods-Token1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Token1.1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,21 +87,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27159C5420728B5000CC6032 /* Forums */ = {
+			isa = PBXGroup;
+			children = (
+				8A53F70F2042546B0010B773 /* ForumViewController.swift */,
+			);
+			path = Forums;
+			sourceTree = "<group>";
+		};
+		27159C5520728BDA00CC6032 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8A236B632034B82F00336BFD /* ContainerViewController.swift */,
+				8A53F7032041E4810010B773 /* MainViewController.swift */,
+				8A236B8F2034B9BB00336BFD /* SideMenuViewController.swift */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
 		4BC6EE83BDA84C5B4F415A5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8A197EB5205F24B600EA7D46 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8A197EB3205F222700EA7D46 /* Sweet.swift */,
-				8A197EB1205F219E00EA7D46 /* User.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8A236B552034B82F00336BFD = {
@@ -139,20 +138,14 @@
 		8A236B602034B82F00336BFD /* Token1.1 */ = {
 			isa = PBXGroup;
 			children = (
-				8A236B612034B82F00336BFD /* AppDelegate.swift */,
-				8A197EB5205F24B600EA7D46 /* Model */,
-				8A236B632034B82F00336BFD /* ContainerVC.swift */,
-				8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */,
 				8A236B652034B82F00336BFD /* Main.storyboard */,
-				8A197EB6205F270F00EA7D46 /* addPostViewController.swift */,
-				8A53F70F2042546B0010B773 /* ForumViewController.swift */,
-				8A53F711204254750010B773 /* InfoViewController.swift */,
-				8A53F7032041E4810010B773 /* MainVC.swift */,
+				8A236B612034B82F00336BFD /* AppDelegate.swift */,
 				8A53F70B204250060010B773 /* TrackerViewController.swift */,
+				27159C5520728BDA00CC6032 /* Main Screen */,
+				27159C5420728B5000CC6032 /* Forums */,
 				8A236B682034B82F00336BFD /* Assets.xcassets */,
 				8A236B6A2034B82F00336BFD /* LaunchScreen.storyboard */,
 				8A236B6D2034B82F00336BFD /* Info.plist */,
-				8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */,
 			);
 			path = Token1.1;
 			sourceTree = "<group>";
@@ -295,7 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A236B6C2034B82F00336BFD /* LaunchScreen.storyboard in Resources */,
-				8A6AC60B205EFE06009805CF /* GoogleService-Info.plist in Resources */,
 				8A236B692034B82F00336BFD /* Assets.xcassets in Resources */,
 				8A236B672034B82F00336BFD /* Main.storyboard in Resources */,
 			);
@@ -383,15 +375,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */,
-				8A236B642034B82F00336BFD /* ContainerVC.swift in Sources */,
+				8A236B642034B82F00336BFD /* ContainerViewController.swift in Sources */,
 				8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */,
-				8A53F712204254750010B773 /* InfoViewController.swift in Sources */,
-				8A197EB2205F219E00EA7D46 /* User.swift in Sources */,
-				8A53F7042041E4810010B773 /* MainVC.swift in Sources */,
-				8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */,
+				8A53F7042041E4810010B773 /* MainViewController.swift in Sources */,
 				8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */,
-				8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */,
-				8A236B902034B9BB00336BFD /* SideMenuVC.swift in Sources */,
+				8A236B902034B9BB00336BFD /* SideMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
