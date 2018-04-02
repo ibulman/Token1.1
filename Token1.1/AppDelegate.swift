@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }else{
                 print(error?.description)
             }
-            } as! AuthResultCallback)
+            } as? AuthResultCallback)
         return true
     }
     

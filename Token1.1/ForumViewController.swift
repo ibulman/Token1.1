@@ -12,31 +12,31 @@ import FirebaseDatabase
 
 
 class ForumViewController: UITableViewController {
-    var dbRef: DatabaseReference!
+//    var dbRef: DatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
-        dbRef = Database.database().reference().child("post-items")
+//        dbRef = Database.database().reference().child("post-items")
     }
     
     
-    @IBAction func addPost(_ sender: Any) {
-        let postAlert = UIAlertController(title: "New Post", message: "Enter your post", preferredStyle: .alert)
-        postAlert.addTextField{ (textField:UITextField) in
-            textField.placeholder = "Your post"
-        }
-        postAlert.addAction(UIAlertAction(title: "Send", style: .default, handler: {(action:UIAlertAction) in
-           if let postContent = postAlert.textFields?.first?.text{
-                let post = Post(content: postContent, addedByUser: "User")
-                
-                let postRef = self.dbRef.child(postContent.lowercased())
-                
-                postRef.setValue(post.toAnyObject())
-            }
-        }))
-        self.present(postAlert, animated: true,completion: nil)
-    }
+//    @IBAction func addPost(_ sender: Any) {
+//        let postAlert = UIAlertController(title: "New Post", message: "Enter your post", preferredStyle: .alert)
+//        postAlert.addTextField{ (textField:UITextField) in
+//            textField.placeholder = "Your post"
+//        }
+//        postAlert.addAction(UIAlertAction(title: "Send", style: .default, handler: {(action:UIAlertAction) in
+//           if let postContent = postAlert.textFields?.first?.text{
+//                let post = Post(content: postContent, addedByUser: "User")
+//
+//                let postRef = self.dbRef.child(postContent.lowercased())
+//
+//                postRef.setValue(post.toAnyObject())
+//            }
+//        }))
+//        self.present(postAlert, animated: true,completion: nil)
+//    }
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {

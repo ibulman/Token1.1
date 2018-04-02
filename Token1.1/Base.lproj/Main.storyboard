@@ -289,7 +289,7 @@
                     <navigationItem key="navigationItem" title="Forum" id="dJS-0d-kwQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pmw-q7-Xl7">
                             <connections>
-                                <action selector="addPost:" destination="quw-3T-Sld" id="7Wj-Zv-PW6"/>
+                                <segue destination="l61-EZ-bv4" kind="show" id="7WJ-oq-thh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -355,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVT-sg-yaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3638" y="1653"/>
+            <point key="canvasLocation" x="2750" y="1653"/>
         </scene>
     </scenes>
     <resources>
