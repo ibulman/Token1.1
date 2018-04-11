@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import CalendarView
 
 class TrackerViewController: UIViewController {
 
     override func viewDidLoad() {
-        let calendar = CalendarView(frame: CGRectMake(0, 0, CGRectGetWidth(view.frame), 320))
+        let calendar = CalendarView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 320))
         view.addSubview(calendar)
         super.viewDidLoad()
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(MoreTapped))

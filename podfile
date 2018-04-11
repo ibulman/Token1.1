@@ -1,10 +1,12 @@
-platform :ios, '9.0'
+platform :ios, '11.3'
 
 target 'Token1.1' do
 
 pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'CalendarView'
+pod 'SwiftMoment'
 
 use_frameworks!
 
