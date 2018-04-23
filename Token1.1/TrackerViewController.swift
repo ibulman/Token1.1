@@ -12,16 +12,18 @@ import CalendarView
 class TrackerViewController: UIViewController {
 
     override func viewDidLoad() {
-        let calendar = CalendarView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 320))
-        view.addSubview(calendar)
-        super.viewDidLoad()
+        
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(MoreTapped))
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
+        let calendar = CalendarView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 320))
+        //let calendar = CalendarView()
+        view.addSubview(calendar)
         // Do any additional setup after loading the view.
+        super.viewDidLoad()
     }
 
     @objc func MoreTapped(){
-        print("TOGGLE SIDE MENU")
+        //print("TOGGLE SIDE MENU")
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
         self.view.layer.shadowColor = UIColor.black.cgColor
         self.view.layer.shadowOpacity = 1
