@@ -19,6 +19,7 @@
 		8A236B772034B82F00336BFD /* Token1_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B762034B82F00336BFD /* Token1_1Tests.swift */; };
 		8A236B822034B82F00336BFD /* Token1_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B812034B82F00336BFD /* Token1_1UITests.swift */; };
 		8A236B902034B9BB00336BFD /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */; };
+		8A3B1A4B208E39910053F468 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B1A4A208E39910053F468 /* LoginViewController.swift */; };
 		8A53F7042041E4810010B773 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F7032041E4810010B773 /* MainVC.swift */; };
 		8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70B204250060010B773 /* TrackerViewController.swift */; };
 		8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70F2042546B0010B773 /* ForumViewController.swift */; };
@@ -63,6 +64,7 @@
 		8A236B812034B82F00336BFD /* Token1_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token1_1UITests.swift; sourceTree = "<group>"; };
 		8A236B832034B82F00336BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		8A3B1A4A208E39910053F468 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8A53F7032041E4810010B773 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		8A53F70B204250060010B773 /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
 		8A53F70F2042546B0010B773 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				8A236B632034B82F00336BFD /* ContainerVC.swift */,
 				8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */,
 				8A236B652034B82F00336BFD /* Main.storyboard */,
+				8A3B1A4A208E39910053F468 /* LoginViewController.swift */,
 				8A197EB6205F270F00EA7D46 /* addPostViewController.swift */,
 				8A53F70F2042546B0010B773 /* ForumViewController.swift */,
 				8A53F711204254750010B773 /* InfoViewController.swift */,
@@ -392,6 +395,7 @@
 				8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */,
 				8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */,
 				8A236B902034B9BB00336BFD /* SideMenuVC.swift in Sources */,
+				8A3B1A4B208E39910053F468 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

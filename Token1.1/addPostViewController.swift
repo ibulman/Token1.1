@@ -27,11 +27,13 @@ class addPostViewController: UIViewController {
         
         postRef.setValue(post.toAnyObject())
         print(self.navigationController?.viewControllers)
+        
 //        self.navigationController?.popViewController(animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         dbRef = Database.database().reference().child("post-items")
+        
 //            dbRef = (self.navigationController?.viewControllers[1] as! ForumViewController).dbRef
         // Do any additional setup after loading the view.
     }

@@ -12,31 +12,60 @@ import FirebaseDatabase
 
 
 class ForumViewController: UITableViewController {
-//    var dbRef: DatabaseReference!
-
+    var dbRef: DatabaseReference!
+    var posts = [Post]()
     override func viewDidLoad() {
         super.viewDidLoad()
+       
 navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
-//        dbRef = Database.database().reference().child("post-items")
+       dbRef = Database.database().reference().child("post-items")
+        startObservingDB()
     }
     
     
-//    @IBAction func addPost(_ sender: Any) {
-//        let postAlert = UIAlertController(title: "New Post", message: "Enter your post", preferredStyle: .alert)
-//        postAlert.addTextField{ (textField:UITextField) in
-//            textField.placeholder = "Your post"
-//        }
-//        postAlert.addAction(UIAlertAction(title: "Send", style: .default, handler: {(action:UIAlertAction) in
-//           if let postContent = postAlert.textFields?.first?.text{
-//                let post = Post(content: postContent, addedByUser: "User")
-//
-//                let postRef = self.dbRef.child(postContent.lowercased())
-//
-//                postRef.setValue(post.toAnyObject())
-//            }
-//        }))
-//        self.present(postAlert, animated: true,completion: nil)
-//    }
+    
+    func startObservingDB(){
+            print("observing")
+        
+        
+        dbRef.observe(.value, with:{(snapshot: DataSnapshot) in
+            var newItems = [Post]()
+            for post in snapshot.children{
+                let postObject = Post(snapshot: post as! DataSnapshot)
+                newItems.append(postObject)
+            }
+            self.posts = newItems
+            self.tableView.reloadData()
+        }) {(error: Error) in
+            print(error.localizedDescription)
+        }
+       dbRef.child("post-items").observe(.childChanged, with: { (snapshot) in
+        var newItems = [Post]()
+                    for post in snapshot.children{
+                        let postObject = Post(snapshot: post as! DataSnapshot)
+                        newItems.append(postObject)
+                    }
+                    self.posts = newItems
+                    self.tableView.reloadData()
+        })
+    }
+    
+    @IBAction func addPost(_ sender: Any) {
+        let postAlert = UIAlertController(title: "New Post", message: "Enter your post", preferredStyle: .alert)
+        postAlert.addTextField{ (textField:UITextField) in
+            textField.placeholder = "Your post"
+        }
+        postAlert.addAction(UIAlertAction(title: "Send", style: .default, handler: {(action:UIAlertAction) in
+           if let postContent = postAlert.textFields?.first?.text{
+                let post = Post(content: postContent, addedByUser: "User")
+
+                let postRef = self.dbRef.child(postContent.lowercased())
+
+                postRef.setValue(post.toAnyObject())
+            }
+        }))
+        self.present(postAlert, animated: true,completion: nil)
+    }
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -45,11 +74,13 @@ navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resource
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return posts.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
+        let post = posts[indexPath.row]
+        cell.textLabel?.text = post.content
+        cell.detailTextLabel?.text = post.addedByUser
         // Configure the cell...
         
         return cell

@@ -25,13 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                print(error?.description)
 //            }
 //            } as! AuthResultCallback )
-        Auth.auth().signIn(withEmail: "test@gmail.com", password: "123456", completion: {(user: User?, error: NSError?) in
-            if error == nil{
-                print(user?.email)
-            }else{
-                print(error?.description)
-            }
-            } as? AuthResultCallback)
+//        Auth.auth().signIn(withEmail: "test@gmail.com", password: "123456", completion: {(user: User?, error: NSError?) in
+//            if error == nil{
+//                print(user?.email)
+//            }else{
+//                print(error?.description)
+//            }
+//            } as? AuthResultCallback)
         return true
     }
     
