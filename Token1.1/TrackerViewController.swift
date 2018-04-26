@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CalendarView
 
 class TrackerViewController: UIViewController {
 
