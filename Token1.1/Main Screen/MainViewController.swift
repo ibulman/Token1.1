@@ -20,16 +20,16 @@ class MainViewController: UIViewController {
     }
     @objc func showScreen1(){
         performSegue(withIdentifier: "ShowScreen1", sender: nil)
-        print(self.navigationController?.viewControllers as Any)
+        //print(self.navigationController?.viewControllers as Any)
     }
     @objc func showScreen2(){
         performSegue(withIdentifier: "ShowScreen2", sender: nil)
-        print(self.navigationController?.viewControllers as Any)
+        //print(self.navigationController?.viewControllers as Any)
 
     }
     @objc func showScreen3(){
         performSegue(withIdentifier: "ShowScreen3", sender: nil)
-        print(self.navigationController?.viewControllers as Any)
+        //print(self.navigationController?.viewControllers as Any)
 
     }
     @objc func showMainScreen(){
@@ -37,14 +37,13 @@ class MainViewController: UIViewController {
         while numberOfControllers! > 1{
             _ = self.navigationController?.viewControllers.popLast()
             numberOfControllers = self.navigationController?.viewControllers.count
-            print(self.navigationController?.viewControllers as Any)
+            //print(self.navigationController?.viewControllers as Any)
 
             
         }
 
     }
     @IBAction func onMoreTapped(){
-        print("TOGGLE SIDE MENU")
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
         self.view.layer.shadowColor = UIColor.black.cgColor
         self.view.layer.shadowOpacity = 1

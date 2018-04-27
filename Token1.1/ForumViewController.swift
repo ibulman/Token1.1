@@ -55,7 +55,6 @@ navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resource
         return cell
     }
     @objc func MoreTapped(){
-        print("TOGGLE SIDE MENU")
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
         self.view.layer.shadowColor = UIColor.black.cgColor
         self.view.layer.shadowOpacity = 1

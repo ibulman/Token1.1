@@ -7,22 +7,40 @@
 //
 
 import UIKit
+import SwiftMoment
 
-class TrackerViewController: UIViewController {
-
+class TrackerViewController: UIViewController, CalendarViewDelegate {
+    
+    func calendarDidSelectDate(date: Moment) {
+        title = date.format("MMMM d, yyyy")
+        calendar.selectDate(date: date)
+    }
+    
+    func calendarDidPageToDate(date: Moment) {
+        title = date.format("MMMM d, yyyy")
+    }
+    
+    @IBOutlet weak var calendar: CalendarView!
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        //calendar?.delegate = self
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        //calendar?.delegate = self
+    }
+    
     override func viewDidLoad() {
-        
+        calendar.delegate = self
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(MoreTapped))
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
-        let calendar = CalendarView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 320))
-        //let calendar = CalendarView()
-        view.addSubview(calendar)
         // Do any additional setup after loading the view.
         super.viewDidLoad()
     }
 
     @objc func MoreTapped(){
-        //print("TOGGLE SIDE MENU")
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
         self.view.layer.shadowColor = UIColor.black.cgColor
         self.view.layer.shadowOpacity = 1

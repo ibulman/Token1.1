@@ -11,7 +11,7 @@ import UIKit
 class SideMenuViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        //print(indexPath.row)
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
         switch indexPath.row{
         case 0:

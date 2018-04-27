@@ -26,121 +26,160 @@ import CoreGraphics
 func -(lhs: Int, rhs: Float) -> Float {
     return Float(lhs) - Float(rhs)
 }
+
 func +(lhs: Int, rhs: Float) -> Float {
     return Float(lhs) + Float(rhs)
 }
+
 func /(lhs: Int, rhs: Float) -> Float {
     return Float(lhs) / Float(rhs)
 }
+
 func *(lhs: Int, rhs: Float) -> Float {
     return Float(lhs) * Float(rhs)
 }
+
 func -(lhs: Int, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs) - CGFloat(rhs)
 }
+
 func +(lhs: Int, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs) + CGFloat(rhs)
 }
+
 func /(lhs: Int, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs) / CGFloat(rhs)
 }
+
 func *(lhs: Int, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs) * CGFloat(rhs)
 }
+
 func -(lhs: Float, rhs: Int) -> Float {
     return Float(lhs) - Float(rhs)
 }
+
 func +(lhs: Float, rhs: Int) -> Float {
     return Float(lhs) + Float(rhs)
 }
+
 func /(lhs: Float, rhs: Int) -> Float {
     return Float(lhs) / Float(rhs)
 }
+
 func *(lhs: Float, rhs: Int) -> Float {
     return Float(lhs) * Float(rhs)
 }
+
 func -(lhs: Float, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs) - CGFloat(rhs)
 }
+
 func +(lhs: Float, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs) + CGFloat(rhs)
 }
+
 func /(lhs: Float, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs) / CGFloat(rhs)
 }
+
 func *(lhs: Float, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs) * CGFloat(rhs)
 }
+
 func -(lhs: CGFloat, rhs: Int) -> CGFloat {
     return CGFloat(lhs) - CGFloat(rhs)
 }
+
 func +(lhs: CGFloat, rhs: Int) -> CGFloat {
     return CGFloat(lhs) + CGFloat(rhs)
 }
+
 func /(lhs: CGFloat, rhs: Int) -> CGFloat {
     return CGFloat(lhs) / CGFloat(rhs)
 }
+
 func *(lhs: CGFloat, rhs: Int) -> CGFloat {
     return CGFloat(lhs) * CGFloat(rhs)
 }
+
 func -(lhs: CGFloat, rhs: Float) -> CGFloat {
     return CGFloat(lhs) - CGFloat(rhs)
 }
+
 func +(lhs: CGFloat, rhs: Float) -> CGFloat {
     return CGFloat(lhs) + CGFloat(rhs)
 }
+
 func /(lhs: CGFloat, rhs: Float) -> CGFloat {
     return CGFloat(lhs) / CGFloat(rhs)
 }
+
 func *(lhs: CGFloat, rhs: Float) -> CGFloat {
     return CGFloat(lhs) * CGFloat(rhs)
 }
+
 func -(lhs: CGFloat, rhs: Double) -> CGFloat {
     return CGFloat(lhs) - CGFloat(rhs)
 }
+
 func +(lhs: CGFloat, rhs: Double) -> CGFloat {
     return CGFloat(lhs) + CGFloat(rhs)
 }
+
 func /(lhs: CGFloat, rhs: Double) -> CGFloat {
     return CGFloat(lhs) / CGFloat(rhs)
 }
+
 func *(lhs: CGFloat, rhs: Double) -> CGFloat {
     return CGFloat(lhs) * CGFloat(rhs)
 }
 
+
 func %(lhs: Int, rhs: Float) -> Float {
     return Float(lhs).truncatingRemainder(dividingBy: Float(rhs))
 }
+
 func %(lhs: Int, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
+
 func %(lhs: Int, rhs: Double) -> Double {
     return Double(lhs).truncatingRemainder(dividingBy: Double(rhs))
 }
+
 func %(lhs: Float, rhs: Int) -> Float {
     return Float(lhs).truncatingRemainder(dividingBy: Float(rhs))
 }
+
 func %(lhs: Float, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
+
 func %(lhs: Float, rhs: Double) -> Double {
     return Double(lhs).truncatingRemainder(dividingBy: Double(rhs))
 }
+
 func %(lhs: CGFloat, rhs: Int) -> CGFloat {
     return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
+
 func %(lhs: CGFloat, rhs: Float) -> CGFloat {
     return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
+
 func %(lhs: CGFloat, rhs: Double) -> CGFloat {
     return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
+
 func %(lhs: Double, rhs: Int) -> Double {
     return Double(lhs).truncatingRemainder(dividingBy: Double(rhs))
 }
+
 func %(lhs: Double, rhs: Float) -> Double {
     return Double(lhs).truncatingRemainder(dividingBy: Double(rhs))
 }
+
 func %(lhs: Double, rhs: CGFloat) -> CGFloat {
     return CGFloat(lhs).truncatingRemainder(dividingBy: CGFloat(rhs))
 }
@@ -148,72 +187,95 @@ func %(lhs: Double, rhs: CGFloat) -> CGFloat {
 func min(x: Int, y: Float) -> Float {
     return min(Float(x), Float(y))
 }
+
 func max(x: Int, y: Float) -> Float {
     return min(Float(x), Float(y))
 }
+
 func min(x: Int, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func max(x: Int, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func min(x: Int, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
+
 func max(x: Int, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
+
 func min(x: Float, y: Int) -> Float {
     return min(Float(x), Float(y))
 }
+
 func max(x: Float, y: Int) -> Float {
     return min(Float(x), Float(y))
 }
+
 func min(x: Float, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func max(x: Float, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func min(x: Float, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
+
 func max(x: Float, y: Double) -> Double {
     return min(Double(x), Double(y))
 }
+
 func min(x: CGFloat, y: Int) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func max(x: CGFloat, y: Int) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func min(x: CGFloat, y: Float) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func max(x: CGFloat, y: Float) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func min(x: CGFloat, y: Double) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func max(x: CGFloat, y: Double) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func min(x: Double, y: Int) -> Double {
     return min(Double(x), Double(y))
 }
+
 func max(x: Double, y: Int) -> Double {
     return min(Double(x), Double(y))
 }
+
 func min(x: Double, y: Float) -> Double {
     return min(Double(x), Double(y))
 }
+
 func max(x: Double, y: Float) -> Double {
     return min(Double(x), Double(y))
 }
+
 func min(x: Double, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
+
 func max(x: Double, y: CGFloat) -> CGFloat {
     return min(CGFloat(x), CGFloat(y))
 }
