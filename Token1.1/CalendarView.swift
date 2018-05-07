@@ -82,6 +82,9 @@ public class CalendarView: UIView {
     lazy var contentView: ContentView = {
         let cv = ContentView(frame: CGRect.zero)
         cv.delegate = self
+        cv.isPagingEnabled = true
+        cv.showsHorizontalScrollIndicator = false
+        cv.showsVerticalScrollIndicator = false
         self.addSubview(cv)
         return cv
     }()
@@ -158,7 +161,7 @@ extension CalendarView: UIScrollViewDelegate {
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         contentView.setContentOffset(CGPoint(x: contentView.frame.width, y: contentView.contentOffset.y), animated: true)
         delegate?.calendarDidPageToDate(date: contentView.currentMonth().date)
-        DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async() {
+        DispatchQueue.global().async() {
             if let day = self.selectedDayOnPaged {
                 let dayView = self.contentView.selectVisibleDate(date: day)
                 DispatchQueue.main.async() {

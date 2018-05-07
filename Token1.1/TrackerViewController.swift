@@ -13,7 +13,6 @@ class TrackerViewController: UIViewController, CalendarViewDelegate {
     
     func calendarDidSelectDate(date: Moment) {
         title = date.format("MMMM d, yyyy")
-        calendar.selectDate(date: date)
     }
     
     func calendarDidPageToDate(date: Moment) {
@@ -40,7 +39,7 @@ class TrackerViewController: UIViewController, CalendarViewDelegate {
         super.viewDidLoad()
     }
 
-    @objc func MoreTapped(){
+    @objc func MoreTapped() {
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
         self.view.layer.shadowColor = UIColor.black.cgColor
         self.view.layer.shadowOpacity = 1

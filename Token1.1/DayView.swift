@@ -19,6 +19,7 @@ class DayView: UIView {
             setNeedsLayout()
         }
     }
+    
     lazy var dateLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -26,6 +27,7 @@ class DayView: UIView {
         self.addSubview(label)
         return label
     }()
+    
     var isToday: Bool = false
     var isOtherMonth: Bool = false
     var selected: Bool = false {
@@ -33,6 +35,7 @@ class DayView: UIView {
             if selected {
                 NotificationCenter.default
                     .post(name: NSNotification.Name(rawValue: CalendarSelectedDayNotification), object: date.toNSDate())
+                print("day has been selected")
             }
             updateView()
         }
@@ -40,8 +43,7 @@ class DayView: UIView {
     
     init() {
         super.init(frame: CGRect.zero)
-        let tap = UITapGestureRecognizer(target: self, action: nil)
-        //#selector(select(_:)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(DayView.selectDate))
         addGestureRecognizer(tap)
         NotificationCenter.default.addObserver(self, selector: #selector(onSelected(notification:)),
                                                name: NSNotification.Name(rawValue: CalendarSelectedDayNotification),
@@ -70,8 +72,10 @@ class DayView: UIView {
             }
         }
     }
-    @objc func select() {
+    
+    @objc func selectDate() {
         selected = true
+        print("select has been called bitch")
     }
     
     
