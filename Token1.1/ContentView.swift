@@ -28,10 +28,6 @@ class ContentView: UIScrollView {
     }
     
     func setup() {
-        //isPagingEnabled = true
-        //showsHorizontalScrollIndicator = false
-        //showsVerticalScrollIndicator = false
-        
         for month in months {
             month.setdown()
             month.removeFromSuperview()

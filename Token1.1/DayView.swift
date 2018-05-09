@@ -35,7 +35,6 @@ class DayView: UIView {
             if selected {
                 NotificationCenter.default
                     .post(name: NSNotification.Name(rawValue: CalendarSelectedDayNotification), object: date.toNSDate())
-                print("day has been selected")
             }
             updateView()
         }
@@ -75,23 +74,25 @@ class DayView: UIView {
     
     @objc func selectDate() {
         selected = true
-        print("select has been called bitch")
     }
     
     
     func updateView() {
-        if self.selected {
-            dateLabel.textColor = CalendarView.daySelectedTextColor
-            dateLabel.backgroundColor = CalendarView.daySelectedBackgroundColor
-        } else if isToday {
-            dateLabel.textColor = CalendarView.todayTextColor
-            dateLabel.backgroundColor = CalendarView.todayBackgroundColor
-        } else if isOtherMonth {
-            dateLabel.textColor = CalendarView.otherMonthTextColor
-            dateLabel.backgroundColor = CalendarView.otherMonthBackgroundColor
-        } else {
-            self.dateLabel.textColor = CalendarView.dayTextColor
-            self.dateLabel.backgroundColor = CalendarView.dayBackgroundColor
+        DispatchQueue.main.async {
+            UIApplication.shared.registerForRemoteNotifications()
+            if self.selected {
+                self.dateLabel.textColor = CalendarView.daySelectedTextColor
+                self.dateLabel.backgroundColor = CalendarView.daySelectedBackgroundColor
+            } else if self.isToday {
+                self.dateLabel.textColor = CalendarView.todayTextColor
+                self.dateLabel.backgroundColor = CalendarView.todayBackgroundColor
+            } else if self.isOtherMonth {
+                self.dateLabel.textColor = CalendarView.otherMonthTextColor
+                self.dateLabel.backgroundColor = CalendarView.otherMonthBackgroundColor
+            } else {
+                self.dateLabel.textColor = CalendarView.dayTextColor
+                self.dateLabel.backgroundColor = CalendarView.dayBackgroundColor
+            }
         }
     }
 }
