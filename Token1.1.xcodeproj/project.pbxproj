@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0CA74C4AEDF7E287DE84CDAA /* Pods_Token1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */; };
+		2763A5EC20A33E7700DB4ECE /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5EB20A33E7700DB4ECE /* CalendarView.swift */; };
+		2763A5EE20A33E8E00DB4ECE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5ED20A33E8E00DB4ECE /* ContentView.swift */; };
+		2763A5F020A33E9D00DB4ECE /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5EF20A33E9D00DB4ECE /* MonthView.swift */; };
+		2763A5F220A33EAC00DB4ECE /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5F120A33EAC00DB4ECE /* WeekView.swift */; };
+		2763A5F420A33EB800DB4ECE /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5F320A33EB800DB4ECE /* DayView.swift */; };
+		2763A5F620A33EC500DB4ECE /* EasyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5F520A33EC500DB4ECE /* EasyCast.swift */; };
 		8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B612034B82F00336BFD /* AppDelegate.swift */; };
 		8A236B642034B82F00336BFD /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B632034B82F00336BFD /* ContainerViewController.swift */; };
 		8A236B672034B82F00336BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A236B652034B82F00336BFD /* Main.storyboard */; };
@@ -39,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2763A5EB20A33E7700DB4ECE /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		2763A5ED20A33E8E00DB4ECE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2763A5EF20A33E9D00DB4ECE /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		2763A5F120A33EAC00DB4ECE /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		2763A5F320A33EB800DB4ECE /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		2763A5F520A33EC500DB4ECE /* EasyCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCast.swift; sourceTree = "<group>"; };
 		485780EA4A4189518EFC0132 /* Pods-Token1.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Token1.1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1.debug.xcconfig"; sourceTree = "<group>"; };
 		804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Token1_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A236B5E2034B82F00336BFD /* Token1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Token1.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +117,19 @@
 			path = "Main Screen";
 			sourceTree = "<group>";
 		};
+		2763A5EA20A3245700DB4ECE /* CalendarView, Edited */ = {
+			isa = PBXGroup;
+			children = (
+				2763A5EB20A33E7700DB4ECE /* CalendarView.swift */,
+				2763A5ED20A33E8E00DB4ECE /* ContentView.swift */,
+				2763A5EF20A33E9D00DB4ECE /* MonthView.swift */,
+				2763A5F120A33EAC00DB4ECE /* WeekView.swift */,
+				2763A5F320A33EB800DB4ECE /* DayView.swift */,
+				2763A5F520A33EC500DB4ECE /* EasyCast.swift */,
+			);
+			name = "CalendarView, Edited";
+			sourceTree = "<group>";
+		};
 		4BC6EE83BDA84C5B4F415A5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +163,7 @@
 		8A236B602034B82F00336BFD /* Token1.1 */ = {
 			isa = PBXGroup;
 			children = (
+				2763A5EA20A3245700DB4ECE /* CalendarView, Edited */,
 				8A236B652034B82F00336BFD /* Main.storyboard */,
 				8A236B612034B82F00336BFD /* AppDelegate.swift */,
 				8A53F70B204250060010B773 /* TrackerViewController.swift */,
@@ -352,6 +378,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMoment/SwiftMoment.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -359,6 +386,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMoment.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -375,10 +403,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */,
+				2763A5F420A33EB800DB4ECE /* DayView.swift in Sources */,
+				2763A5EC20A33E7700DB4ECE /* CalendarView.swift in Sources */,
+				2763A5EE20A33E8E00DB4ECE /* ContentView.swift in Sources */,
 				8A236B642034B82F00336BFD /* ContainerViewController.swift in Sources */,
 				8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */,
+				2763A5F620A33EC500DB4ECE /* EasyCast.swift in Sources */,
 				8A53F7042041E4810010B773 /* MainViewController.swift in Sources */,
+				2763A5F220A33EAC00DB4ECE /* WeekView.swift in Sources */,
 				8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */,
+				2763A5F020A33E9D00DB4ECE /* MonthView.swift in Sources */,
 				8A236B902034B9BB00336BFD /* SideMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
