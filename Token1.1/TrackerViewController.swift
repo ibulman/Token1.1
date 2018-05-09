@@ -8,7 +8,17 @@
 
 import UIKit
 
-class TrackerViewController: UIViewController {
+class TrackerViewController: UIViewController, CalendarViewDelegate {
+    
+    func calendarDidSelectDate(date: Moment) {
+        title = date.format("MMMM d, yyyy")
+    }
+    
+    func calendarDidPageToDate(date: Moment) {
+        title = date.format("MMMM d, yyyy")
+    }
+    
+    @IBOutlet weak var calendar: CalendarView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
