@@ -6,7 +6,7 @@
 #import "FIRAuthCredential.h"
 #import "FIRAuthDataResult.h"
 #import "FIRAuthErrors.h"
-#import "FIRAuthTokenResult.h"
+//#import "FIRAuthTokenResult.h"
 #import "FIRAuthUIDelegate.h"
 #import "FIREmailAuthProvider.h"
 #import "FIRFacebookAuthProvider.h"
@@ -19,3 +19,5 @@
 #import "FIRUser.h"
 #import "FIRUserInfo.h"
 #import "FIRUserMetadata.h"
+
+//THIS IS THE PROBLEM CHILD
