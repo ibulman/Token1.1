@@ -22,6 +22,7 @@ class TrackerViewController: UIViewController, CalendarViewDelegate {
     @IBOutlet weak var calendar: CalendarView!
 
     override func viewDidLoad() {
+        calendar.delegate = self
         super.viewDidLoad()
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(MoreTapped))
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
