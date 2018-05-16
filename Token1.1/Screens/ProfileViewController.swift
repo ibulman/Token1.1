@@ -8,10 +8,14 @@
 
 import UIKit
 
-class InfoViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
+    
+    var currentUser : String!
+    @IBOutlet weak var username: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        username.text = currentUser
 navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
         // Do any additional setup after loading the view.
     }
@@ -24,5 +28,6 @@ navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resource
         self.view.layer.shadowRadius = 100
         self.view.layer.shadowOffset = CGSize.zero
     }
+    
 
 }

@@ -22,8 +22,9 @@ class SideMenuVC: UITableViewController {
 
         case 2:
             NotificationCenter.default.post(name: NSNotification.Name("ShowScreen2"), object: nil)
-
         case 3:
+            NotificationCenter.default.post(name: NSNotification.Name("ShowScreen4"), object: nil)
+        case 4:
             NotificationCenter.default.post(name: NSNotification.Name("ShowScreen3"), object: nil)
         default: break
         }

@@ -9,12 +9,13 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    var currentUser : String!
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(showScreen1), name: NSNotification.Name("ShowScreen1"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showScreen2), name: NSNotification.Name("ShowScreen2"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showScreen3), name: NSNotification.Name("ShowScreen3"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showScreen4), name: NSNotification.Name("ShowScreen4"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showMainScreen), name: NSNotification.Name("ShowMainScreen"), object: nil)
         
     }
@@ -30,7 +31,14 @@ class MainVC: UIViewController {
     @objc func showScreen3(){
         performSegue(withIdentifier: "ShowScreen3", sender: nil)
         print(self.navigationController?.viewControllers)
+        
 
+    }
+    @objc func showScreen4(){
+        performSegue(withIdentifier: "ShowScreen4", sender: nil)
+        print(self.navigationController?.viewControllers)
+        
+        
     }
     @objc func showMainScreen(){
         var numberOfControllers = self.navigationController?.viewControllers.count
@@ -50,6 +58,15 @@ class MainVC: UIViewController {
         self.view.layer.shadowOpacity = 1
         self.view.layer.shadowRadius = 100
         self.view.layer.shadowOffset = CGSize.zero
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "ShowScreen3"?:
+            let profController = segue.destination as! ProfileViewController
+            profController.currentUser = self.currentUser
+        default:
+            return
+        }
     }
     
 

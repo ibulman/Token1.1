@@ -13,7 +13,7 @@ import FirebaseDatabase
 class addPostViewController: UIViewController {
    var dbRef: DatabaseReference!
     var postContent = ""
-    
+    var currentUser = ""
     @IBOutlet weak var contentField: UITextField!
     
     @IBAction func doneButton(_ sender: Any) {

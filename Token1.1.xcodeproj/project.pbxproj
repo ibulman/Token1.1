@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CA74C4AEDF7E287DE84CDAA /* Pods_Token1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */; };
+		8A0BDBE3209A2BA400BE459A /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0BDBE2209A2BA400BE459A /* MapsViewController.swift */; };
 		8A197EB2205F219E00EA7D46 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB1205F219E00EA7D46 /* User.swift */; };
 		8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB3205F222700EA7D46 /* Sweet.swift */; };
 		8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB6205F270F00EA7D46 /* addPostViewController.swift */; };
@@ -20,11 +21,14 @@
 		8A236B822034B82F00336BFD /* Token1_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B812034B82F00336BFD /* Token1_1UITests.swift */; };
 		8A236B902034B9BB00336BFD /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */; };
 		8A3B1A4B208E39910053F468 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B1A4A208E39910053F468 /* LoginViewController.swift */; };
+		8A404F7820ABB25C00945F79 /* MapsMenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A404F7720ABB25C00945F79 /* MapsMenuContainerViewController.swift */; };
+		8A404F7A20ABB27D00945F79 /* MapsMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A404F7920ABB27D00945F79 /* MapsMenuTableViewController.swift */; };
 		8A53F7042041E4810010B773 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F7032041E4810010B773 /* MainVC.swift */; };
 		8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70B204250060010B773 /* TrackerViewController.swift */; };
 		8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70F2042546B0010B773 /* ForumViewController.swift */; };
-		8A53F712204254750010B773 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F711204254750010B773 /* InfoViewController.swift */; };
+		8A53F712204254750010B773 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F711204254750010B773 /* ProfileViewController.swift */; };
 		8A6AC60B205EFE06009805CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */; };
+		8A7CB8E22090F22F005A6941 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CB8E12090F22F005A6941 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,7 @@
 /* Begin PBXFileReference section */
 		485780EA4A4189518EFC0132 /* Pods-Token1.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Token1.1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1.debug.xcconfig"; sourceTree = "<group>"; };
 		804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Token1_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0BDBE2209A2BA400BE459A /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		8A197EB1205F219E00EA7D46 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8A197EB3205F222700EA7D46 /* Sweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweet.swift; sourceTree = "<group>"; };
 		8A197EB6205F270F00EA7D46 /* addPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPostViewController.swift; sourceTree = "<group>"; };
@@ -65,11 +70,14 @@
 		8A236B832034B82F00336BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		8A3B1A4A208E39910053F468 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A404F7720ABB25C00945F79 /* MapsMenuContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsMenuContainerViewController.swift; sourceTree = "<group>"; };
+		8A404F7920ABB27D00945F79 /* MapsMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsMenuTableViewController.swift; sourceTree = "<group>"; };
 		8A53F7032041E4810010B773 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		8A53F70B204250060010B773 /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
 		8A53F70F2042546B0010B773 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
-		8A53F711204254750010B773 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		8A53F711204254750010B773 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A7CB8E12090F22F005A6941 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FF1AC8C7A8EC7D2B743ACFF8 /* Pods-Token1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Token1.1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +115,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8A0BDBDF209778F900BE459A /* Login stuff */ = {
+			isa = PBXGroup;
+			children = (
+				8A7CB8E12090F22F005A6941 /* SignUpViewController.swift */,
+				8A3B1A4A208E39910053F468 /* LoginViewController.swift */,
+			);
+			path = "Login stuff";
+			sourceTree = "<group>";
+		};
+		8A0BDBE02097792500BE459A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8A53F711204254750010B773 /* ProfileViewController.swift */,
+				8A53F70B204250060010B773 /* TrackerViewController.swift */,
+				8A0BDBE2209A2BA400BE459A /* MapsViewController.swift */,
+				8A0BDBE12097793300BE459A /* Forum stuff */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8A0BDBE12097793300BE459A /* Forum stuff */ = {
+			isa = PBXGroup;
+			children = (
+				8A53F70F2042546B0010B773 /* ForumViewController.swift */,
+				8A197EB6205F270F00EA7D46 /* addPostViewController.swift */,
+			);
+			path = "Forum stuff";
+			sourceTree = "<group>";
+		};
 		8A197EB5205F24B600EA7D46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,16 +179,15 @@
 			isa = PBXGroup;
 			children = (
 				8A236B612034B82F00336BFD /* AppDelegate.swift */,
+				8A0BDBE02097792500BE459A /* Screens */,
+				8A0BDBDF209778F900BE459A /* Login stuff */,
 				8A197EB5205F24B600EA7D46 /* Model */,
 				8A236B632034B82F00336BFD /* ContainerVC.swift */,
 				8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */,
 				8A236B652034B82F00336BFD /* Main.storyboard */,
-				8A3B1A4A208E39910053F468 /* LoginViewController.swift */,
-				8A197EB6205F270F00EA7D46 /* addPostViewController.swift */,
-				8A53F70F2042546B0010B773 /* ForumViewController.swift */,
-				8A53F711204254750010B773 /* InfoViewController.swift */,
+				8A404F7720ABB25C00945F79 /* MapsMenuContainerViewController.swift */,
+				8A404F7920ABB27D00945F79 /* MapsMenuTableViewController.swift */,
 				8A53F7032041E4810010B773 /* MainVC.swift */,
-				8A53F70B204250060010B773 /* TrackerViewController.swift */,
 				8A236B682034B82F00336BFD /* Assets.xcassets */,
 				8A236B6A2034B82F00336BFD /* LaunchScreen.storyboard */,
 				8A236B6D2034B82F00336BFD /* Info.plist */,
@@ -345,9 +381,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -385,12 +428,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A404F7820ABB25C00945F79 /* MapsMenuContainerViewController.swift in Sources */,
+				8A0BDBE3209A2BA400BE459A /* MapsViewController.swift in Sources */,
 				8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */,
+				8A404F7A20ABB27D00945F79 /* MapsMenuTableViewController.swift in Sources */,
 				8A236B642034B82F00336BFD /* ContainerVC.swift in Sources */,
 				8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */,
-				8A53F712204254750010B773 /* InfoViewController.swift in Sources */,
+				8A53F712204254750010B773 /* ProfileViewController.swift in Sources */,
 				8A197EB2205F219E00EA7D46 /* User.swift in Sources */,
 				8A53F7042041E4810010B773 /* MainVC.swift in Sources */,
+				8A7CB8E22090F22F005A6941 /* SignUpViewController.swift in Sources */,
 				8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */,
 				8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */,
 				8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */,

@@ -1,11 +1,18 @@
 platform :ios, '9.0'
-
+source 'https://github.com/CocoaPods/Specs.git'
 target 'Token1.1' do
 
 pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
+pod 'GooglePlacePicker'
 
+    
 use_frameworks!
 
+
 end
+
+

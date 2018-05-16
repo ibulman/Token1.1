@@ -10,6 +10,7 @@ import UIKit
 
 class ContainerVC: UIViewController {
 
+    var currentUser: String!
     @IBOutlet weak var sideMenuConstraint: NSLayoutConstraint!
     var sideMenuOpen = false
     
@@ -31,7 +32,17 @@ class ContainerVC: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "main"?:
+            let navController = segue.destination as! UINavigationController
+            let mainController = navController.viewControllers[0] as! MainVC
+            mainController.currentUser = self.currentUser
+            
+        default:
+            return
+        }
+    }
 
 
 
