@@ -8,32 +8,61 @@
 
 import UIKit
 import GoogleMaps
-class MapsViewController: UIViewController {
+import CoreLocation
+class MapsViewController: UIViewController , CLLocationManagerDelegate {
 //    @IBOutlet weak var map : UIView!
-    override func loadView() {
-
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
-        let mapView = GMSMapView.map(withFrame:  CGRect(x: 0, y: 0, width: 100, height: 100), camera: camera)
+    var table : MapsMenuTableViewController!
+    var locationManager = CLLocationManager()
+    var camera = GMSCameraPosition()
+    var mapView = GMSMapView()
+    var currentLocation : CLLocation!
+    override func viewDidLoad() {
+navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
+       super.viewDidLoad()
         view = mapView
-
+        self.locationManager.delegate = self
+        self.locationManager = CLLocationManager()
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
+showCurrentLocationOnMap()
         // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
+//        let marker = GMSMarker()
+//        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
+//        marker.title = "Sydney"
+//        marker.snippet = "Australia"
+//        marker.map = mapView
 //         Do any additional setup after loading the view.
     }
-
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.showCurrentLocationOnMap()
+        self.locationManager.stopUpdatingLocation()
+    }
+    
+    
+    func showCurrentLocationOnMap(){
+//        camera = GMSCameraPosition.camera(withLatitude: (self.locationManager.location?.coordinate.latitude)!, longitude: (self.locationManager.location?.coordinate.longitude)!, zoom: 14)
+//        print(self.locationManager.location)
+//        mapView = GMSMapView.map(withFrame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height), camera: camera)
+        currentLocation = self.locationManager.location
+        mapView.animate(to: GMSCameraPosition.camera(withLatitude: (self.locationManager.location?.coordinate.latitude)!, longitude: (self.locationManager.location?.coordinate.longitude)!, zoom: 14))
+        mapView.settings.myLocationButton = true
+        mapView.isMyLocationEnabled = true
+        let marker = GMSMarker()
+        marker.position = camera.target
+        marker.appearAnimation = GMSMarkerAnimation.pop
+        marker.map = mapView
+//        self.view.addSubview(mapView)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("display map")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        print("display map")
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
+//
+//    }
 
     /*
     // MARK: - Navigation

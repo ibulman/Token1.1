@@ -61,6 +61,9 @@ class MainVC: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier{
+        case "ShowScreen2"?:
+            let forumController = segue.destination as! ForumViewController
+            forumController.currentUser = self.currentUser
         case "ShowScreen3"?:
             let profController = segue.destination as! ProfileViewController
             profController.currentUser = self.currentUser

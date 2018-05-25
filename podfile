@@ -8,6 +8,7 @@ pod 'Firebase/Database'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'GooglePlacePicker'
+pod 'Firebase/Storage'
 
     
 use_frameworks!

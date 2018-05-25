@@ -14,6 +14,7 @@ import FirebaseDatabase
 class ForumViewController: UITableViewController {
     var dbRef: DatabaseReference!
     var posts = [Post]()
+    var currentUser = ""
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -50,22 +51,22 @@ navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resource
         })
     }
     
-    @IBAction func addPost(_ sender: Any) {
-        let postAlert = UIAlertController(title: "New Post", message: "Enter your post", preferredStyle: .alert)
-        postAlert.addTextField{ (textField:UITextField) in
-            textField.placeholder = "Your post"
-        }
-        postAlert.addAction(UIAlertAction(title: "Send", style: .default, handler: {(action:UIAlertAction) in
-           if let postContent = postAlert.textFields?.first?.text{
-                let post = Post(content: postContent, addedByUser: "User")
-
-                let postRef = self.dbRef.child(postContent.lowercased())
-
-                postRef.setValue(post.toAnyObject())
-            }
-        }))
-        self.present(postAlert, animated: true,completion: nil)
-    }
+//    @IBAction func addPost(_ sender: Any) {
+//        let postAlert = UIAlertController(title: "New Post", message: "Enter your post", preferredStyle: .alert)
+//        postAlert.addTextField{ (textField:UITextField) in
+//            textField.placeholder = "Your post"
+//        }
+//        postAlert.addAction(UIAlertAction(title: "Send", style: .default, handler: {(action:UIAlertAction) in
+//           if let postContent = postAlert.textFields?.first?.text{
+//            let post = Post(content: postContent, addedByUser: self.currentUser)
+//
+//                let postRef = self.dbRef.child(postContent.lowercased())
+//
+//                postRef.setValue(post.toAnyObject())
+//            }
+//        }))
+//        self.present(postAlert, animated: true,completion: nil)
+//    }
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -79,7 +80,7 @@ navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resource
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let post = posts[indexPath.row]
-        cell.textLabel?.text = post.content
+        cell.textLabel?.text = post.title
         cell.detailTextLabel?.text = post.addedByUser
         // Configure the cell...
         
@@ -92,6 +93,23 @@ navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resource
         self.view.layer.shadowOpacity = 1
         self.view.layer.shadowRadius = 100
         self.view.layer.shadowOffset = CGSize.zero
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "detail"?:
+            if let row = tableView.indexPathForSelectedRow?.row{
+                
+                let post = posts[row]
+                let postViewController
+                    = segue.destination as! PostViewController
+                postViewController.post = post
+                postViewController.currentUser = self.currentUser
+            }
+        case "add"?:
+            print("")
+        default: 
+        print("fail")
+        }
     }
 
 }

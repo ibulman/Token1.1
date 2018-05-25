@@ -20,15 +20,21 @@
 		8A236B772034B82F00336BFD /* Token1_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B762034B82F00336BFD /* Token1_1Tests.swift */; };
 		8A236B822034B82F00336BFD /* Token1_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B812034B82F00336BFD /* Token1_1UITests.swift */; };
 		8A236B902034B9BB00336BFD /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */; };
+		8A39CD9220AEFAAD00259E90 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39CD9120AEFAAD00259E90 /* CellTableViewCell.swift */; };
+		8A39CD9420AF0A6600259E90 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39CD9320AF0A6600259E90 /* Distance.swift */; };
 		8A3B1A4B208E39910053F468 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B1A4A208E39910053F468 /* LoginViewController.swift */; };
+		8A3EFB4220B5FA7A00F299AB /* postviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3EFB4120B5FA7A00F299AB /* postviewCell.swift */; };
 		8A404F7820ABB25C00945F79 /* MapsMenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A404F7720ABB25C00945F79 /* MapsMenuContainerViewController.swift */; };
 		8A404F7A20ABB27D00945F79 /* MapsMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A404F7920ABB27D00945F79 /* MapsMenuTableViewController.swift */; };
+		8A4177A120AC9EBC00C35B57 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4177A020AC9EBC00C35B57 /* Place.swift */; };
 		8A53F7042041E4810010B773 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F7032041E4810010B773 /* MainVC.swift */; };
 		8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70B204250060010B773 /* TrackerViewController.swift */; };
 		8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70F2042546B0010B773 /* ForumViewController.swift */; };
 		8A53F712204254750010B773 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F711204254750010B773 /* ProfileViewController.swift */; };
-		8A6AC60B205EFE06009805CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */; };
 		8A7CB8E22090F22F005A6941 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CB8E12090F22F005A6941 /* SignUpViewController.swift */; };
+		8AD9CED220B3A00400E216CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9CED120B3A00400E216CF /* CoreLocation.framework */; };
+		8AD9CEE920B5276000E216CF /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9CEE820B5276000E216CF /* PostViewController.swift */; };
+		8AD9CEEB20B5C84200E216CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AD9CEEA20B5C84200E216CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,15 +75,21 @@
 		8A236B812034B82F00336BFD /* Token1_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token1_1UITests.swift; sourceTree = "<group>"; };
 		8A236B832034B82F00336BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		8A39CD9120AEFAAD00259E90 /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
+		8A39CD9320AF0A6600259E90 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		8A3B1A4A208E39910053F468 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A3EFB4120B5FA7A00F299AB /* postviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postviewCell.swift; sourceTree = "<group>"; };
 		8A404F7720ABB25C00945F79 /* MapsMenuContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsMenuContainerViewController.swift; sourceTree = "<group>"; };
 		8A404F7920ABB27D00945F79 /* MapsMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsMenuTableViewController.swift; sourceTree = "<group>"; };
+		8A4177A020AC9EBC00C35B57 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		8A53F7032041E4810010B773 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		8A53F70B204250060010B773 /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
 		8A53F70F2042546B0010B773 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		8A53F711204254750010B773 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A7CB8E12090F22F005A6941 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8AD9CED120B3A00400E216CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8AD9CEE820B5276000E216CF /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		8AD9CEEA20B5C84200E216CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF1AC8C7A8EC7D2B743ACFF8 /* Pods-Token1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Token1.1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD9CED220B3A00400E216CF /* CoreLocation.framework in Frameworks */,
 				0CA74C4AEDF7E287DE84CDAA /* Pods_Token1_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +123,7 @@
 		4BC6EE83BDA84C5B4F415A5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AD9CED120B3A00400E216CF /* CoreLocation.framework */,
 				804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */,
 			);
 			name = Frameworks;
@@ -139,7 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				8A53F70F2042546B0010B773 /* ForumViewController.swift */,
+				8AD9CEE820B5276000E216CF /* PostViewController.swift */,
 				8A197EB6205F270F00EA7D46 /* addPostViewController.swift */,
+				8A3EFB4120B5FA7A00F299AB /* postviewCell.swift */,
 			);
 			path = "Forum stuff";
 			sourceTree = "<group>";
@@ -186,12 +202,15 @@
 				8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */,
 				8A236B652034B82F00336BFD /* Main.storyboard */,
 				8A404F7720ABB25C00945F79 /* MapsMenuContainerViewController.swift */,
+				8A39CD9320AF0A6600259E90 /* Distance.swift */,
 				8A404F7920ABB27D00945F79 /* MapsMenuTableViewController.swift */,
+				8A39CD9120AEFAAD00259E90 /* CellTableViewCell.swift */,
+				8A4177A020AC9EBC00C35B57 /* Place.swift */,
 				8A53F7032041E4810010B773 /* MainVC.swift */,
 				8A236B682034B82F00336BFD /* Assets.xcassets */,
 				8A236B6A2034B82F00336BFD /* LaunchScreen.storyboard */,
 				8A236B6D2034B82F00336BFD /* Info.plist */,
-				8A6AC60A205EFE06009805CF /* GoogleService-Info.plist */,
+				8AD9CEEA20B5C84200E216CF /* GoogleService-Info.plist */,
 			);
 			path = Token1.1;
 			sourceTree = "<group>";
@@ -334,7 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A236B6C2034B82F00336BFD /* LaunchScreen.storyboard in Resources */,
-				8A6AC60B205EFE06009805CF /* GoogleService-Info.plist in Resources */,
+				8AD9CEEB20B5C84200E216CF /* GoogleService-Info.plist in Resources */,
 				8A236B692034B82F00336BFD /* Assets.xcassets in Resources */,
 				8A236B672034B82F00336BFD /* Main.storyboard in Resources */,
 			);
@@ -428,7 +447,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A39CD9420AF0A6600259E90 /* Distance.swift in Sources */,
 				8A404F7820ABB25C00945F79 /* MapsMenuContainerViewController.swift in Sources */,
+				8A3EFB4220B5FA7A00F299AB /* postviewCell.swift in Sources */,
 				8A0BDBE3209A2BA400BE459A /* MapsViewController.swift in Sources */,
 				8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */,
 				8A404F7A20ABB27D00945F79 /* MapsMenuTableViewController.swift in Sources */,
@@ -438,7 +459,10 @@
 				8A197EB2205F219E00EA7D46 /* User.swift in Sources */,
 				8A53F7042041E4810010B773 /* MainVC.swift in Sources */,
 				8A7CB8E22090F22F005A6941 /* SignUpViewController.swift in Sources */,
+				8A39CD9220AEFAAD00259E90 /* CellTableViewCell.swift in Sources */,
+				8AD9CEE920B5276000E216CF /* PostViewController.swift in Sources */,
 				8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */,
+				8A4177A120AC9EBC00C35B57 /* Place.swift in Sources */,
 				8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */,
 				8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */,
 				8A236B902034B9BB00336BFD /* SideMenuVC.swift in Sources */,
@@ -610,6 +634,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P852MX7V5;
 				INFOPLIST_FILE = Token1.1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "s.Token1-1";
@@ -625,6 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P852MX7V5;
 				INFOPLIST_FILE = Token1.1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "s.Token1-1";

@@ -46,6 +46,7 @@ class LoginViewController: UIViewController {
                     print("You have successfully logged in")
                     
                     //Go to the HomeViewController if the login is sucessful
+                    
                     self.currentUser = self.emailField.text!
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home") as! ContainerVC
                     vc.currentUser = self.currentUser
