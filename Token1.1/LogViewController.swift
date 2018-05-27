@@ -18,6 +18,10 @@ class LogViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     
     @IBOutlet weak var PickerView: UIPickerView!
     
+    @IBAction func pop(sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     var tags = [String]()
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

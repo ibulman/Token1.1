@@ -28,6 +28,11 @@ class TrackerViewController: UIViewController, CalendarViewDelegate {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let navi = self.navigationController?.navigationBar
+        
+    }
 
     @objc func MoreTapped(){
         print("TOGGLE SIDE MENU")
