@@ -19,21 +19,17 @@ class ContainerViewController: UIViewController {
     
     }
     
-    @objc func toggleSideMenu(){
+    @objc func toggleSideMenu() {
         if sideMenuOpen{
             sideMenuOpen = false
             sideMenuConstraint.constant = -240
-        }else{
+        } else {
             sideMenuOpen = true
             sideMenuConstraint.constant = 0
         }
-        UIView.animate(withDuration: 0.3){
+        UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
     }
-
-
-
-
 }
 

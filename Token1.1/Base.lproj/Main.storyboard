@@ -230,19 +230,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dga-jk-Fac" customClass="CalendarView" customModule="Token1_1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="320"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="tKS-TP-2oo"/>
-                                </constraints>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yWj-pk-X6i">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dga-jk-Fac" customClass="CalendarView" customModule="Token1_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="375" id="pKP-Pq-Sx0"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMe-I3-tOw">
+                                        <rect key="frame" x="0.0" y="375" width="375" height="228"/>
+                                        <state key="normal" title="Log Day"/>
+                                        <connections>
+                                            <segue destination="GuO-U7-gYE" kind="showDetail" identifier="ShowDay" id="sz4-gz-QXW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dga-jk-Fac" firstAttribute="top" secondItem="WNI-0Q-7fW" secondAttribute="top" id="VjK-mo-STR"/>
-                            <constraint firstItem="dga-jk-Fac" firstAttribute="leading" secondItem="WNI-0Q-7fW" secondAttribute="leading" id="iox-Nn-j4o"/>
-                            <constraint firstItem="dga-jk-Fac" firstAttribute="trailing" secondItem="WNI-0Q-7fW" secondAttribute="trailing" id="ouf-Yh-3Ve"/>
+                            <constraint firstItem="yWj-pk-X6i" firstAttribute="leading" secondItem="WNI-0Q-7fW" secondAttribute="leading" id="Jn8-Po-CA6"/>
+                            <constraint firstItem="yWj-pk-X6i" firstAttribute="trailing" secondItem="WNI-0Q-7fW" secondAttribute="trailing" id="QPV-lH-Q6N"/>
+                            <constraint firstItem="yWj-pk-X6i" firstAttribute="bottom" secondItem="WNI-0Q-7fW" secondAttribute="bottom" id="Vp1-Q8-10c"/>
+                            <constraint firstItem="yWj-pk-X6i" firstAttribute="top" secondItem="WNI-0Q-7fW" secondAttribute="top" id="gWP-uN-xoR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WNI-0Q-7fW"/>
                     </view>
@@ -253,7 +266,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLJ-Vv-xwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918" y="1667"/>
+            <point key="canvasLocation" x="908" y="1667"/>
+        </scene>
+        <!--Log View Controller-->
+        <scene sceneID="BWM-VJ-k8v">
+            <objects>
+                <viewController id="GuO-U7-gYE" customClass="LogViewController" customModule="Token1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eh8-BM-wLn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meq-tU-Pr7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="Lwa-UU-tsX"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r8F-Va-wyN">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pn7-LZ-SeA">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail Entry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efw-gi-Zzj">
+                                        <rect key="frame" x="0.0" y="236" width="375" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write about your day - what helped? What didn't?" translatesAutoresizingMaskIntoConstraints="NO" id="zTY-5v-KXB">
+                                        <rect key="frame" x="0.0" y="256.5" width="375" height="366.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r8F-Va-wyN" firstAttribute="bottom" secondItem="KCC-J2-HPv" secondAttribute="bottom" id="0tn-eY-Ivl"/>
+                            <constraint firstItem="meq-tU-Pr7" firstAttribute="top" secondItem="Eh8-BM-wLn" secondAttribute="top" id="Fp3-g1-TWM"/>
+                            <constraint firstItem="r8F-Va-wyN" firstAttribute="trailing" secondItem="KCC-J2-HPv" secondAttribute="trailing" id="kkb-F3-3tK"/>
+                            <constraint firstItem="r8F-Va-wyN" firstAttribute="leading" secondItem="KCC-J2-HPv" secondAttribute="leading" id="ng9-rg-eOB"/>
+                            <constraint firstAttribute="trailing" secondItem="meq-tU-Pr7" secondAttribute="trailing" id="no8-P1-Eh5"/>
+                            <constraint firstItem="r8F-Va-wyN" firstAttribute="top" secondItem="meq-tU-Pr7" secondAttribute="bottom" id="oWY-bc-fAh"/>
+                            <constraint firstItem="meq-tU-Pr7" firstAttribute="leading" secondItem="Eh8-BM-wLn" secondAttribute="leading" id="wGc-b7-E1d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KCC-J2-HPv"/>
+                    </view>
+                    <connections>
+                        <outlet property="PickerView" destination="Pn7-LZ-SeA" id="jGC-Sb-Jj9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZb-jx-pjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="2481"/>
         </scene>
         <!--Forum-->
         <scene sceneID="aty-6A-K9g">

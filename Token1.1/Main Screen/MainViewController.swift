@@ -18,32 +18,27 @@ class MainViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(showMainScreen), name: NSNotification.Name("ShowMainScreen"), object: nil)
         
     }
-    @objc func showScreen1(){
+    
+    @objc func showScreen1() {
         performSegue(withIdentifier: "ShowScreen1", sender: nil)
-        //print(self.navigationController?.viewControllers as Any)
     }
-    @objc func showScreen2(){
+    @objc func showScreen2() {
         performSegue(withIdentifier: "ShowScreen2", sender: nil)
-        //print(self.navigationController?.viewControllers as Any)
 
     }
-    @objc func showScreen3(){
+    @objc func showScreen3() {
         performSegue(withIdentifier: "ShowScreen3", sender: nil)
-        //print(self.navigationController?.viewControllers as Any)
 
     }
-    @objc func showMainScreen(){
+    @objc func showMainScreen() {
         var numberOfControllers = self.navigationController?.viewControllers.count
         while numberOfControllers! > 1{
             _ = self.navigationController?.viewControllers.popLast()
             numberOfControllers = self.navigationController?.viewControllers.count
-            //print(self.navigationController?.viewControllers as Any)
-
-            
         }
-
     }
-    @IBAction func onMoreTapped(){
+    
+    @IBAction func onMoreTapped() {
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
         self.view.layer.shadowColor = UIColor.black.cgColor
         self.view.layer.shadowOpacity = 1

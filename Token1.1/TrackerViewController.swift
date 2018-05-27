@@ -44,15 +44,19 @@ class TrackerViewController: UIViewController, CalendarViewDelegate {
         self.view.layer.shadowRadius = 100
         self.view.layer.shadowOffset = CGSize.zero
     }
-
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "ShowDay":
+            segue.destination.title = segue.source.title
+        default:
+            print("unknown segue identifier")
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
