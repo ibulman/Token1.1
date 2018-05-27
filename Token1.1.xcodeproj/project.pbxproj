@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CA74C4AEDF7E287DE84CDAA /* Pods_Token1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */; };
+		2707F54820BB240C002580C6 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707F54720BB240C002580C6 /* LogViewController.swift */; };
 		2763A5EC20A33E7700DB4ECE /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5EB20A33E7700DB4ECE /* CalendarView.swift */; };
 		2763A5EE20A33E8E00DB4ECE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5ED20A33E8E00DB4ECE /* ContentView.swift */; };
 		2763A5F020A33E9D00DB4ECE /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5EF20A33E9D00DB4ECE /* MonthView.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2707F54720BB240C002580C6 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		2763A5EB20A33E7700DB4ECE /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		2763A5ED20A33E8E00DB4ECE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2763A5EF20A33E9D00DB4ECE /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				2763A5EA20A3245700DB4ECE /* CalendarView, Edited */,
 				8A236B652034B82F00336BFD /* Main.storyboard */,
+				2707F54720BB240C002580C6 /* LogViewController.swift */,
 				8A236B612034B82F00336BFD /* AppDelegate.swift */,
 				8A53F70B204250060010B773 /* TrackerViewController.swift */,
 				27159C5520728BDA00CC6032 /* Main Screen */,
@@ -405,6 +408,7 @@
 				8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */,
 				2763A5F420A33EB800DB4ECE /* DayView.swift in Sources */,
 				2763A5EC20A33E7700DB4ECE /* CalendarView.swift in Sources */,
+				2707F54820BB240C002580C6 /* LogViewController.swift in Sources */,
 				2763A5EE20A33E8E00DB4ECE /* ContentView.swift in Sources */,
 				8A236B642034B82F00336BFD /* ContainerViewController.swift in Sources */,
 				8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */,
