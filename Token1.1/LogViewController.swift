@@ -8,12 +8,6 @@
 
 import UIKit
 
-enum tags: Int {
-    case sober
-    case usedAcceptably
-    case used
-}
-
 class LogViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var PickerView: UIPickerView!

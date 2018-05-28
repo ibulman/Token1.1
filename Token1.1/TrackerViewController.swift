@@ -20,7 +20,7 @@ class TrackerViewController: UIViewController, CalendarViewDelegate {
     }
     
     @IBOutlet weak var calendar: CalendarView!
-
+    
     override func viewDidLoad() {
         calendar.delegate = self
         super.viewDidLoad()
@@ -28,14 +28,8 @@ class TrackerViewController: UIViewController, CalendarViewDelegate {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
         // Do any additional setup after loading the view.
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        let navi = self.navigationController?.navigationBar
-        
-    }
 
     @objc func MoreTapped(){
-        print("TOGGLE SIDE MENU")
         NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
         self.view.layer.shadowColor = UIColor.black.cgColor
         self.view.layer.shadowOpacity = 1

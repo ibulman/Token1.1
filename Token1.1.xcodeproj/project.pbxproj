@@ -201,24 +201,6 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		27159C5420728B5000CC6032 /* Forums */ = {
-			isa = PBXGroup;
-			children = (
-				8A53F70F2042546B0010B773 /* ForumViewController.swift */,
-			);
-			path = Forums;
-			sourceTree = "<group>";
-		};
-		27159C5520728BDA00CC6032 /* Main Screen */ = {
-			isa = PBXGroup;
-			children = (
-				8A236B632034B82F00336BFD /* ContainerViewController.swift */,
-				8A53F7032041E4810010B773 /* MainViewController.swift */,
-				8A236B8F2034B9BB00336BFD /* SideMenuViewController.swift */,
-			);
-			path = "Main Screen";
-			sourceTree = "<group>";
-		};
 		2763A5EA20A3245700DB4ECE /* CalendarView, Edited */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,8 +253,10 @@
 				2707F54720BB240C002580C6 /* LogViewController.swift */,
 				8A236B612034B82F00336BFD /* AppDelegate.swift */,
 				8A53F70B204250060010B773 /* TrackerViewController.swift */,
-				27159C5520728BDA00CC6032 /* Main Screen */,
-				27159C5420728B5000CC6032 /* Forums */,
+				8A53F70F2042546B0010B773 /* ForumViewController.swift */,
+				8A236B632034B82F00336BFD /* ContainerViewController.swift */,
+				8A53F7032041E4810010B773 /* MainViewController.swift */,
+				8A236B8F2034B9BB00336BFD /* SideMenuViewController.swift */,
 				8A236B682034B82F00336BFD /* Assets.xcassets */,
 				8A236B6A2034B82F00336BFD /* LaunchScreen.storyboard */,
 				8A236B6D2034B82F00336BFD /* Info.plist */,
