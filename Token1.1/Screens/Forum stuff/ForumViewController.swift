@@ -19,8 +19,11 @@ class ForumViewController: UITableViewController {
         super.viewDidLoad()
        
 navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
+        navigationItem.leftBarButtonItem?.tintColor = UIColor(red: 255, green: 227, blue: 105, alpha: 1)
        dbRef = Database.database().reference().child("post-items")
         startObservingDB()
+        self.tableView.separatorColor = UIColor.clear
+
     }
     
     
@@ -78,8 +81,12 @@ navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resource
         return posts.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let post = posts[indexPath.row]
+        if (indexPath.row == self.posts.count-1) {
+            cell.separatorInset = UIEdgeInsetsMake(0, cell.bounds.size.width, 0, 0);
+        }
         cell.textLabel?.text = post.title
         cell.detailTextLabel?.text = post.addedByUser
         // Configure the cell...

@@ -40,6 +40,8 @@ class PostViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     override func viewDidLoad() {
         dbRef = Database.database().reference().child("post-items")
         super.viewDidLoad()
+        table.rowHeight = UITableViewAutomaticDimension
+        table.estimatedRowHeight = 140
         
 postTitle.text = post.title
         author.text = post.addedByUser
@@ -73,10 +75,10 @@ postTitle.text = post.title
         return replies.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! postviewCell
         let reply = replies[indexPath.row]
-        cell.textLabel?.text = reply.content
-        cell.detailTextLabel?.text = reply.addedByUser
+        cell.replyContent.text = reply.content
+//        cell.detailTextLabel?.text = reply.addedByUser
         // Configure the cell...
         
         return cell
