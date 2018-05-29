@@ -258,6 +258,21 @@
             </objects>
             <point key="canvasLocation" x="-828" y="1823"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="4ii-St-i9t">
+            <objects>
+                <viewController id="IOz-y5-7cC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hiq-Z6-6kJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aeN-zQ-W6R"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bn-FX-oZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="1653"/>
+        </scene>
         <!--Side MenuVC-->
         <scene sceneID="pQx-b4-F1f">
             <objects>
@@ -470,13 +485,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-hM-CGW" customClass="CalendarView" customModule="Token1_1" customModuleProvider="target">
-                                <rect key="frame" x="81" y="179" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-hM-CGW" customClass="CalendarView" customModule="Token1_1" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="355" height="320"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="xHk-D5-4ir"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WNI-0Q-7fW" firstAttribute="trailing" secondItem="Clt-hM-CGW" secondAttribute="trailing" constant="10" id="0I4-MY-ME1"/>
+                            <constraint firstItem="Clt-hM-CGW" firstAttribute="leading" secondItem="WNI-0Q-7fW" secondAttribute="leading" constant="10" id="cns-Nk-wOa"/>
+                            <constraint firstItem="Clt-hM-CGW" firstAttribute="top" secondItem="WNI-0Q-7fW" secondAttribute="top" constant="10" id="fVw-B6-hqh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WNI-0Q-7fW"/>
                     </view>
                     <connections>
@@ -485,7 +507,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLJ-Vv-xwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="1653"/>
+            <point key="canvasLocation" x="-73" y="1653"/>
         </scene>
         <!--Forum-->
         <scene sceneID="aty-6A-K9g">
