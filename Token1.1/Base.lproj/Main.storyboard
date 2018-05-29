@@ -116,23 +116,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tof-Qy-W7v">
-                                        <rect key="frame" x="0.0" y="167" width="240" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tof-Qy-W7v" id="P2f-AA-YgA">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtg-2Z-MR3">
-                                                    <rect key="frame" x="16" y="12" width="208" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -244,7 +227,7 @@
                                         <rect key="frame" x="0.0" y="320" width="375" height="283"/>
                                         <state key="normal" title="Log Day"/>
                                         <connections>
-                                            <segue destination="BB4-5V-XPn" kind="show" id="3kO-AZ-6ZO"/>
+                                            <segue destination="BB4-5V-XPn" kind="show" identifier="LogDay" id="3kO-AZ-6ZO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -310,7 +293,7 @@
                     <navigationItem key="navigationItem" id="N24-Qk-3BB">
                         <barButtonItem key="leftBarButtonItem" title="Save" id="cUS-X2-m1d">
                             <connections>
-                                <action selector="popWithSender:" destination="BB4-5V-XPn" id="SuE-Ue-mGc"/>
+                                <action selector="saveLogWithSender:" destination="BB4-5V-XPn" id="agr-n0-Fvw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

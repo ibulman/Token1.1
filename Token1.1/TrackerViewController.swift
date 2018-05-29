@@ -13,20 +13,38 @@ class TrackerViewController: UIViewController, CalendarViewDelegate {
     
     func calendarDidSelectDate(date: Moment) {
         title = date.format("MMMM d, yyyy")
+        self.date = date
     }
     
     func calendarDidPageToDate(date: Moment) {
         title = date.format("MMMM d, yyyy")
+        self.date = date
     }
     
+    func addLog(log: Log) {
+        logs.append(log)
+    }
+
     @IBOutlet weak var calendar: CalendarView!
+    
+    var logs = [Log]()
+    var date = moment()
     
     override func viewDidLoad() {
         calendar.delegate = self
         super.viewDidLoad()
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(MoreTapped))
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
-        // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "LogDay":
+            segue.destination.navigationItem.title = self.date.format("MMMM d, yyyy")
+            (segue.destination as! LogViewController).logDate = self.date
+            
+        default:
+            print("unknown segue identifier")
+        }
     }
 
     @objc func MoreTapped(){

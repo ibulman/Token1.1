@@ -26,6 +26,7 @@
 		2707F56F20BB2B78002580C6 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707F55E20BB2B78002580C6 /* IQUITextFieldView+Additions.swift */; };
 		2707F57020BB2B78002580C6 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707F55F20BB2B78002580C6 /* IQUIView+Hierarchy.swift */; };
 		2707F57120BB2B78002580C6 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707F56020BB2B78002580C6 /* IQNSArray+Sort.swift */; };
+		2707F57820BCC5F0002580C6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2707F57720BCC5F0002580C6 /* Log.swift */; };
 		2763A5EC20A33E7700DB4ECE /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5EB20A33E7700DB4ECE /* CalendarView.swift */; };
 		2763A5EE20A33E8E00DB4ECE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5ED20A33E8E00DB4ECE /* ContentView.swift */; };
 		2763A5F020A33E9D00DB4ECE /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763A5EF20A33E9D00DB4ECE /* MonthView.swift */; };
@@ -82,6 +83,7 @@
 		2707F55E20BB2B78002580C6 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		2707F55F20BB2B78002580C6 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		2707F56020BB2B78002580C6 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		2707F57720BCC5F0002580C6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		2763A5EB20A33E7700DB4ECE /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		2763A5ED20A33E8E00DB4ECE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2763A5EF20A33E9D00DB4ECE /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				2763A5EA20A3245700DB4ECE /* CalendarView, Edited */,
 				8A236B652034B82F00336BFD /* Main.storyboard */,
 				2707F54720BB240C002580C6 /* LogViewController.swift */,
+				2707F57720BCC5F0002580C6 /* Log.swift */,
 				8A236B612034B82F00336BFD /* AppDelegate.swift */,
 				8A53F70B204250060010B773 /* TrackerViewController.swift */,
 				8A53F70F2042546B0010B773 /* ForumViewController.swift */,
@@ -493,6 +496,7 @@
 			files = (
 				2707F56C20BB2B78002580C6 /* IQKeyboardManager.swift in Sources */,
 				8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */,
+				2707F57820BCC5F0002580C6 /* Log.swift in Sources */,
 				2707F56320BB2B78002580C6 /* IQTitleBarButtonItem.swift in Sources */,
 				2763A5F420A33EB800DB4ECE /* DayView.swift in Sources */,
 				2707F57020BB2B78002580C6 /* IQUIView+Hierarchy.swift in Sources */,

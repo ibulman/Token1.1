@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import SwiftMoment
 
 class LogViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var PickerView: UIPickerView!
     
-    @IBAction func pop(sender: Any) {
+    @IBAction func saveLog(sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
     var tags = [String]()
+    var logDate: Moment? = nil
+    var logTag: tag? = nil
+    var logTextStorage: NSTextStorage? = nil
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -36,7 +40,6 @@ class LogViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         self.PickerView.delegate = self
         self.PickerView.dataSource = self
         
-        self.tags = ["Sober", "Used", "Used Moderately"]
-        
+        self.tags = ["None Selected", "Sober", "Used", "Used Moderately"]
     }
 }
