@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		0CA74C4AEDF7E287DE84CDAA /* Pods_Token1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */; };
 		8A0BDBE3209A2BA400BE459A /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0BDBE2209A2BA400BE459A /* MapsViewController.swift */; };
+		8A14D39420BDE51F00BF1B6C /* ContentView1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D38B20BDE51E00BF1B6C /* ContentView1.1.swift */; };
+		8A14D39520BDE51F00BF1B6C /* DayView1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D38C20BDE51E00BF1B6C /* DayView1.1.swift */; };
+		8A14D39620BDE51F00BF1B6C /* LogViewController1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D38D20BDE51F00BF1B6C /* LogViewController1.1.swift */; };
+		8A14D39720BDE51F00BF1B6C /* MonthView1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D38E20BDE51F00BF1B6C /* MonthView1.1.swift */; };
+		8A14D39820BDE51F00BF1B6C /* TrackerViewController1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D38F20BDE51F00BF1B6C /* TrackerViewController1.1.swift */; };
+		8A14D39920BDE51F00BF1B6C /* WeekView1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D39020BDE51F00BF1B6C /* WeekView1.1.swift */; };
+		8A14D39A20BDE51F00BF1B6C /* CalendarView1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D39120BDE51F00BF1B6C /* CalendarView1.1.swift */; };
+		8A14D39B20BDE51F00BF1B6C /* EasyCast1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D39220BDE51F00BF1B6C /* EasyCast1.1.swift */; };
+		8A14D39C20BDE51F00BF1B6C /* Log1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D39320BDE51F00BF1B6C /* Log1.1.swift */; };
+		8A14D39E20BDE56400BF1B6C /* IQKeyboardManagerSwift in Resources */ = {isa = PBXBuildFile; fileRef = 8A14D39D20BDE56300BF1B6C /* IQKeyboardManagerSwift */; };
 		8A197EB2205F219E00EA7D46 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB1205F219E00EA7D46 /* User.swift */; };
 		8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB3205F222700EA7D46 /* Sweet.swift */; };
 		8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB6205F270F00EA7D46 /* addPostViewController.swift */; };
@@ -28,7 +38,6 @@
 		8A404F7A20ABB27D00945F79 /* MapsMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A404F7920ABB27D00945F79 /* MapsMenuTableViewController.swift */; };
 		8A4177A120AC9EBC00C35B57 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4177A020AC9EBC00C35B57 /* Place.swift */; };
 		8A53F7042041E4810010B773 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F7032041E4810010B773 /* MainVC.swift */; };
-		8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70B204250060010B773 /* TrackerViewController.swift */; };
 		8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70F2042546B0010B773 /* ForumViewController.swift */; };
 		8A53F712204254750010B773 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F711204254750010B773 /* ProfileViewController.swift */; };
 		8A7CB8E22090F22F005A6941 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CB8E12090F22F005A6941 /* SignUpViewController.swift */; };
@@ -58,6 +67,16 @@
 		485780EA4A4189518EFC0132 /* Pods-Token1.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Token1.1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1.debug.xcconfig"; sourceTree = "<group>"; };
 		804EBC5830AE76CDAF0A305E /* Pods_Token1_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Token1_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0BDBE2209A2BA400BE459A /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		8A14D38B20BDE51E00BF1B6C /* ContentView1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView1.1.swift; path = "../../../untitled folder 3/ContentView1.1.swift"; sourceTree = "<group>"; };
+		8A14D38C20BDE51E00BF1B6C /* DayView1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayView1.1.swift; path = "../../../untitled folder 3/DayView1.1.swift"; sourceTree = "<group>"; };
+		8A14D38D20BDE51F00BF1B6C /* LogViewController1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogViewController1.1.swift; path = "../../../untitled folder 3/LogViewController1.1.swift"; sourceTree = "<group>"; };
+		8A14D38E20BDE51F00BF1B6C /* MonthView1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonthView1.1.swift; path = "../../../untitled folder 3/MonthView1.1.swift"; sourceTree = "<group>"; };
+		8A14D38F20BDE51F00BF1B6C /* TrackerViewController1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackerViewController1.1.swift; path = "../../../untitled folder 3/TrackerViewController1.1.swift"; sourceTree = "<group>"; };
+		8A14D39020BDE51F00BF1B6C /* WeekView1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeekView1.1.swift; path = "../../../untitled folder 3/WeekView1.1.swift"; sourceTree = "<group>"; };
+		8A14D39120BDE51F00BF1B6C /* CalendarView1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarView1.1.swift; path = "../../../untitled folder 3/CalendarView1.1.swift"; sourceTree = "<group>"; };
+		8A14D39220BDE51F00BF1B6C /* EasyCast1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyCast1.1.swift; path = "../../../untitled folder 3/EasyCast1.1.swift"; sourceTree = "<group>"; };
+		8A14D39320BDE51F00BF1B6C /* Log1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Log1.1.swift; path = "../../../untitled folder 3/Log1.1.swift"; sourceTree = "<group>"; };
+		8A14D39D20BDE56300BF1B6C /* IQKeyboardManagerSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = IQKeyboardManagerSwift; path = ../../IQKeyboardManagerSwift; sourceTree = "<group>"; };
 		8A197EB1205F219E00EA7D46 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8A197EB3205F222700EA7D46 /* Sweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweet.swift; sourceTree = "<group>"; };
 		8A197EB6205F270F00EA7D46 /* addPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPostViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +102,6 @@
 		8A404F7920ABB27D00945F79 /* MapsMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsMenuTableViewController.swift; sourceTree = "<group>"; };
 		8A4177A020AC9EBC00C35B57 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		8A53F7032041E4810010B773 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		8A53F70B204250060010B773 /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
 		8A53F70F2042546B0010B773 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		8A53F711204254750010B773 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8A7CB8E12090F22F005A6941 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				8A53F711204254750010B773 /* ProfileViewController.swift */,
-				8A53F70B204250060010B773 /* TrackerViewController.swift */,
 				8A0BDBE2209A2BA400BE459A /* MapsViewController.swift */,
 				8A0BDBE12097793300BE459A /* Forum stuff */,
 			);
@@ -158,6 +175,22 @@
 				8A3EFB4120B5FA7A00F299AB /* postviewCell.swift */,
 			);
 			path = "Forum stuff";
+			sourceTree = "<group>";
+		};
+		8A14D38A20BDE50400BF1B6C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				8A14D39120BDE51F00BF1B6C /* CalendarView1.1.swift */,
+				8A14D38B20BDE51E00BF1B6C /* ContentView1.1.swift */,
+				8A14D38C20BDE51E00BF1B6C /* DayView1.1.swift */,
+				8A14D39220BDE51F00BF1B6C /* EasyCast1.1.swift */,
+				8A14D39320BDE51F00BF1B6C /* Log1.1.swift */,
+				8A14D38D20BDE51F00BF1B6C /* LogViewController1.1.swift */,
+				8A14D38E20BDE51F00BF1B6C /* MonthView1.1.swift */,
+				8A14D38F20BDE51F00BF1B6C /* TrackerViewController1.1.swift */,
+				8A14D39020BDE51F00BF1B6C /* WeekView1.1.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		8A197EB5205F24B600EA7D46 /* Model */ = {
@@ -194,6 +227,8 @@
 		8A236B602034B82F00336BFD /* Token1.1 */ = {
 			isa = PBXGroup;
 			children = (
+				8A14D39D20BDE56300BF1B6C /* IQKeyboardManagerSwift */,
+				8A14D38A20BDE50400BF1B6C /* Calendar */,
 				8A236B612034B82F00336BFD /* AppDelegate.swift */,
 				8A0BDBE02097792500BE459A /* Screens */,
 				8A0BDBDF209778F900BE459A /* Login stuff */,
@@ -352,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A14D39E20BDE56400BF1B6C /* IQKeyboardManagerSwift in Resources */,
 				8A236B6C2034B82F00336BFD /* LaunchScreen.storyboard in Resources */,
 				8AD9CEEB20B5C84200E216CF /* GoogleService-Info.plist in Resources */,
 				8A236B692034B82F00336BFD /* Assets.xcassets in Resources */,
@@ -450,10 +486,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A39CD9420AF0A6600259E90 /* Distance.swift in Sources */,
+				8A14D39520BDE51F00BF1B6C /* DayView1.1.swift in Sources */,
 				8A404F7820ABB25C00945F79 /* MapsMenuContainerViewController.swift in Sources */,
+				8A14D39420BDE51F00BF1B6C /* ContentView1.1.swift in Sources */,
 				8A3EFB4220B5FA7A00F299AB /* postviewCell.swift in Sources */,
 				8A0BDBE3209A2BA400BE459A /* MapsViewController.swift in Sources */,
-				8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */,
+				8A14D39B20BDE51F00BF1B6C /* EasyCast1.1.swift in Sources */,
 				8A404F7A20ABB27D00945F79 /* MapsMenuTableViewController.swift in Sources */,
 				8A236B642034B82F00336BFD /* ContainerVC.swift in Sources */,
 				8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */,
@@ -461,14 +499,20 @@
 				8A197EB2205F219E00EA7D46 /* User.swift in Sources */,
 				8A53F7042041E4810010B773 /* MainVC.swift in Sources */,
 				8A7CB8E22090F22F005A6941 /* SignUpViewController.swift in Sources */,
+				8A14D39A20BDE51F00BF1B6C /* CalendarView1.1.swift in Sources */,
 				8A39CD9220AEFAAD00259E90 /* CellTableViewCell.swift in Sources */,
+				8A14D39620BDE51F00BF1B6C /* LogViewController1.1.swift in Sources */,
+				8A14D39920BDE51F00BF1B6C /* WeekView1.1.swift in Sources */,
 				8AD9CEE920B5276000E216CF /* PostViewController.swift in Sources */,
 				8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */,
 				8A4177A120AC9EBC00C35B57 /* Place.swift in Sources */,
+				8A14D39720BDE51F00BF1B6C /* MonthView1.1.swift in Sources */,
+				8A14D39820BDE51F00BF1B6C /* TrackerViewController1.1.swift in Sources */,
 				8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */,
 				8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */,
 				8A236B902034B9BB00336BFD /* SideMenuVC.swift in Sources */,
 				8A3B1A4B208E39910053F468 /* LoginViewController.swift in Sources */,
+				8A14D39C20BDE51F00BF1B6C /* Log1.1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
