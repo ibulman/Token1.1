@@ -44,6 +44,7 @@
 		8A53F7042041E4810010B773 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F7032041E4810010B773 /* MainViewController.swift */; };
 		8A53F70C204250060010B773 /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70B204250060010B773 /* TrackerViewController.swift */; };
 		8A53F7102042546B0010B773 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A53F70F2042546B0010B773 /* ForumViewController.swift */; };
+		8A7C0AB420BDC6F10003CAD6 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 8A7C0AB320BDC6F10003CAD6 /* .gitattributes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		8A53F7032041E4810010B773 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8A53F70B204250060010B773 /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
 		8A53F70F2042546B0010B773 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
+		8A7C0AB320BDC6F10003CAD6 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		FF1AC8C7A8EC7D2B743ACFF8 /* Pods-Token1.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Token1.1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Token1.1/Pods-Token1.1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,6 +229,7 @@
 		8A236B552034B82F00336BFD = {
 			isa = PBXGroup;
 			children = (
+				8A7C0AB320BDC6F10003CAD6 /* .gitattributes */,
 				8A236B602034B82F00336BFD /* Token1.1 */,
 				8A236B752034B82F00336BFD /* Token1.1Tests */,
 				8A236B802034B82F00336BFD /* Token1.1UITests */,
@@ -404,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7C0AB420BDC6F10003CAD6 /* .gitattributes in Resources */,
 				8A236B6C2034B82F00336BFD /* LaunchScreen.storyboard in Resources */,
 				8A236B692034B82F00336BFD /* Assets.xcassets in Resources */,
 				2707F56A20BB2B78002580C6 /* IQKeyboardManager.bundle in Resources */,
