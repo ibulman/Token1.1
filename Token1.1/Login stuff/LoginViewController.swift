@@ -14,9 +14,15 @@ class LoginViewController: UIViewController {
     var currentUser: String? = nil
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loginButton.layer.cornerRadius = 10
+        loginButton.clipsToBounds = true
+        signUpButton.layer.cornerRadius = 10
+        signUpButton.clipsToBounds = true
+        self.navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
 
@@ -73,6 +79,7 @@ class LoginViewController: UIViewController {
 //            }
 //        })
     }
+    
     
     
     
