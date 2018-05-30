@@ -130,7 +130,7 @@
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8F4-3o-vaP">
                                         <rect key="frame" x="0.0" y="371" width="255" height="40"/>
-                                        <color key="backgroundColor" red="1" green="0.89093847199999998" blue="0.41316925339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.99607843137254903" green="0.84705882352941175" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="MRh-26-OP9"/>
                                         </constraints>
