@@ -235,8 +235,8 @@ class MapsMenuTableViewController: UITableViewController {
         
         let place = places[indexPath.row]
 //        cell.textLabel?.text = place.result.name
-        cell.nameLabel.text = place.result.name
-        cell.distanceLabel.text = String(describing: place.distance!.rounded())
+        cell.nameLabel.setTitle(place.result.name, for: .normal)
+        cell.distanceLabel.text = "\(place.distance!.rounded()) mi"
         //        cell?.detailTextLabel?.text = "1111"
 //        print(places)
         return cell
@@ -303,5 +303,20 @@ class MapsMenuTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func prepareWebsite(_ sender: Any){
+    let ac = UIAlertController(title: "Open Safari?", message: "Clicking OK will bring you to this place's website.", preferredStyle: .actionSheet)
+    let row = self.tableView.indexPathForSelectedRow?.row
+        let website = places[row!].result.website
+    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+    ac.addAction(cancelAction)
+    
+    let goAction = UIAlertAction(title: "OK", style: .destructive, handler: {(action)-> Void in
+        self.openWebsite(url: website)
+    
+    })
+    present(ac, animated: true, completion: nil)
+    }
+    func openWebsite(url: String){
+        UIApplication.shared.open(URL(fileURLWithPath: url), options: [:], completionHandler: nil)
+    }
 }

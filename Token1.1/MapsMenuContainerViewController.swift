@@ -16,8 +16,7 @@ class MapsMenuContainerViewController: UIViewController {
     var menuOpen = false
     var currentLocation : CLLocation!
     override func viewDidLoad() {
-        currentLocation = map.currentLocation
-        
+        currentLocation = CLLocation(latitude: 42.3136460, longitude: -71.1862540)
         super.viewDidLoad()
         
 navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))

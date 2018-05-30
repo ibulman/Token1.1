@@ -46,6 +46,7 @@ showCurrentLocationOnMap()
 //        print(self.locationManager.location)
 //        mapView = GMSMapView.map(withFrame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height), camera: camera)
         currentLocation = self.locationManager.location
+        print(currentLocation)
         mapView.animate(to: GMSCameraPosition.camera(withLatitude: (self.locationManager.location?.coordinate.latitude)!, longitude: (self.locationManager.location?.coordinate.longitude)!, zoom: 14))
         mapView.settings.myLocationButton = true
         mapView.isMyLocationEnabled = true

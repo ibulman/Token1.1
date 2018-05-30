@@ -9,7 +9,8 @@
 import UIKit
 
 class Cell: UITableViewCell {
-    @IBOutlet weak var nameLabel : UILabel!
+    @IBOutlet weak var nameLabel : UIButton!
+    
     @IBOutlet weak var distanceLabel : UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

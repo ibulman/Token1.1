@@ -42,7 +42,8 @@ class PostViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         super.viewDidLoad()
         table.rowHeight = UITableViewAutomaticDimension
         table.estimatedRowHeight = 140
-        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-back-50"), style: .done, target: self, action: #selector(popLastView))
+        navigationItem.leftBarButtonItem?.tintColor = UIColor(displayP3Red: 1, green: 227/255, blue: 105/255, alpha: 1)
 postTitle.text = post.title
         author.text = post.addedByUser
         content.text = post.content
@@ -107,5 +108,8 @@ postTitle.text = post.title
 //            self.replies = newItems
 //            self.table.reloadData()
 //        })
+    }
+    @objc func popLastView(){
+        self.navigationController?.viewControllers.popLast()
     }
 }
