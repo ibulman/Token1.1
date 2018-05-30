@@ -20,6 +20,7 @@
 		8A14D39C20BDE51F00BF1B6C /* Log1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D39320BDE51F00BF1B6C /* Log1.1.swift */; };
 		8A14D39E20BDE56400BF1B6C /* IQKeyboardManagerSwift in Resources */ = {isa = PBXBuildFile; fileRef = 8A14D39D20BDE56300BF1B6C /* IQKeyboardManagerSwift */; };
 		8A14D3A020BE24A400BF1B6C /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D39F20BE24A400BF1B6C /* ForumTableViewCell.swift */; };
+		8A14D3A220BE34F100BF1B6C /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D3A120BE34F100BF1B6C /* NavViewController.swift */; };
 		8A197EB2205F219E00EA7D46 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB1205F219E00EA7D46 /* User.swift */; };
 		8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB3205F222700EA7D46 /* Sweet.swift */; };
 		8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB6205F270F00EA7D46 /* addPostViewController.swift */; };
@@ -79,6 +80,7 @@
 		8A14D39320BDE51F00BF1B6C /* Log1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Log1.1.swift; path = "../../../untitled folder 3/Log1.1.swift"; sourceTree = "<group>"; };
 		8A14D39D20BDE56300BF1B6C /* IQKeyboardManagerSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = IQKeyboardManagerSwift; path = ../../IQKeyboardManagerSwift; sourceTree = "<group>"; };
 		8A14D39F20BE24A400BF1B6C /* ForumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
+		8A14D3A120BE34F100BF1B6C /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		8A197EB1205F219E00EA7D46 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8A197EB3205F222700EA7D46 /* Sweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweet.swift; sourceTree = "<group>"; };
 		8A197EB6205F270F00EA7D46 /* addPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPostViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				8A236B632034B82F00336BFD /* ContainerVC.swift */,
 				8A236B8F2034B9BB00336BFD /* SideMenuVC.swift */,
 				8A236B652034B82F00336BFD /* Main.storyboard */,
+				8A14D3A120BE34F100BF1B6C /* NavViewController.swift */,
 				8A404F7720ABB25C00945F79 /* MapsMenuContainerViewController.swift */,
 				8A39CD9320AF0A6600259E90 /* Distance.swift */,
 				8A404F7920ABB27D00945F79 /* MapsMenuTableViewController.swift */,
@@ -504,6 +507,7 @@
 				8A7CB8E22090F22F005A6941 /* SignUpViewController.swift in Sources */,
 				8A14D39A20BDE51F00BF1B6C /* CalendarView1.1.swift in Sources */,
 				8A39CD9220AEFAAD00259E90 /* CellTableViewCell.swift in Sources */,
+				8A14D3A220BE34F100BF1B6C /* NavViewController.swift in Sources */,
 				8A14D39620BDE51F00BF1B6C /* LogViewController1.1.swift in Sources */,
 				8A14D39920BDE51F00BF1B6C /* WeekView1.1.swift in Sources */,
 				8AD9CEE920B5276000E216CF /* PostViewController.swift in Sources */,

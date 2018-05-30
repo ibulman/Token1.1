@@ -22,7 +22,7 @@ class ForumViewController: UITableViewController {
         super.viewDidLoad()
        
 navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
-        navigationItem.leftBarButtonItem?.tintColor = UIColor(red: 255, green: 227, blue: 105, alpha: 1)
+        navigationItem.leftBarButtonItem?.tintColor = UIColor(displayP3Red: 1, green: 227/255, blue: 105/255, alpha: 1)
        dbRef = Database.database().reference().child("post-items")
         startObservingDB()
         self.tableView.separatorColor = UIColor.clear

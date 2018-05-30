@@ -17,12 +17,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         loginButton.layer.cornerRadius = 10
         loginButton.clipsToBounds = true
         signUpButton.layer.cornerRadius = 10
         signUpButton.clipsToBounds = true
         self.navigationController?.navigationBar.isHidden = true
+        
         // Do any additional setup after loading the view.
     }
 

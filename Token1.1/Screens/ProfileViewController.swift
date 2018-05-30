@@ -17,6 +17,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         username.text = currentUser
 navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-menu-50"), style: .done, target: self, action: #selector(MoreTapped))
+        navigationItem.leftBarButtonItem?.tintColor = UIColor(displayP3Red: 1, green: 227/255, blue: 105/255, alpha: 1)
         // Do any additional setup after loading the view.
     }
 

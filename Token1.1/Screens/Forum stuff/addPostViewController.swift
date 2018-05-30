@@ -42,7 +42,13 @@ class addPostViewController: UIViewController {
         dbRef = Database.database().reference().child("post-items")
         let forumController = self.navigationController?.viewControllers[(self.navigationController?.viewControllers.count)! - 2] as! ForumViewController
         currentUser = forumController.currentUser
-        
+        let yourBackImage = #imageLiteral(resourceName: "icons8-back-50")
+//        self.navigationController?.navigationBar.backIndicatorImage = yourBackImage
+//        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
+//        self.navigationController?.navigationBar.backItem?.title = ""
+//        self.navigationController?.navigationBar.tintColor = UIColor.orange
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-back-50"), style: .done, target: self, action: #selector(popLastView))
+        navigationItem.leftBarButtonItem?.tintColor = UIColor(displayP3Red: 1, green: 227/255, blue: 105/255, alpha: 1)
 //            dbRef = (self.navigationController?.viewControllers[1] as! ForumViewController).dbRef
         // Do any additional setup after loading the view.
     }
@@ -51,7 +57,9 @@ class addPostViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @objc func popLastView(){
+        self.navigationController?.viewControllers.popLast()
+    }
 
     /*
     // MARK: - Navigation
