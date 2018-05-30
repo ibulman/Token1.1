@@ -7,11 +7,26 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class MainVC: UIViewController {
     var currentUser : String!
     @IBOutlet weak var userLabel: UILabel!
     override func viewDidLoad() {
+        var ref = Database.database().reference()
+        let userID = Auth.auth().currentUser?.uid
+        ref.child("Users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            let username = value?["UserID"] as? String ?? ""
+            self.userLabel.text = username
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(showScreen1), name: NSNotification.Name("ShowScreen1"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showScreen2), name: NSNotification.Name("ShowScreen2"), object: nil)
