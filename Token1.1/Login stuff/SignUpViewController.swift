@@ -21,6 +21,8 @@ class SignUpViewController: UIViewController , UITextFieldDelegate{
  var dbRef: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-back-50"), style: .done, target: self, action: #selector(popLastView))
+        navigationItem.leftBarButtonItem?.tintColor = UIColor(displayP3Red: 1, green: 227/255, blue: 105/255, alpha: 1)
         self.UserID.delegate = self
         self.nameField.delegate = self
         self.confirmPass.delegate = self
@@ -85,7 +87,9 @@ class SignUpViewController: UIViewController , UITextFieldDelegate{
             }
         }
     }
-
+    @objc func popLastView(){
+        self.navigationController?.viewControllers.popLast()
+    }
     /*
     // MARK: - Navigation
 
