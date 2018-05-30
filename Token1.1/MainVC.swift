@@ -10,6 +10,7 @@ import UIKit
 
 class MainVC: UIViewController {
     var currentUser : String!
+    @IBOutlet weak var userLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(showScreen1), name: NSNotification.Name("ShowScreen1"), object: nil)
