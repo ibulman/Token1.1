@@ -31,6 +31,8 @@ class SignUpViewController: UIViewController , UITextFieldDelegate{
          dbRef = Database.database().reference().child("Users")
         let storage = Storage.storage().reference(forURL: "gs://token-d75ba.appspot.com")
         userStorage = storage.child("users")
+        self.navigationController?.navigationBar.isHidden = false
+
         // Do any additional setup after loading the view.
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
