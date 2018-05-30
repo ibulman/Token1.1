@@ -15,6 +15,9 @@ class ForumViewController: UITableViewController {
     var dbRef: DatabaseReference!
     var posts = [Post]()
     var currentUser = ""
+      var finalDate : Date!
+     let dateFormatter = DateFormatter()
+    var timeLabelText: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -23,6 +26,10 @@ navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resource
        dbRef = Database.database().reference().child("post-items")
         startObservingDB()
         self.tableView.separatorColor = UIColor.clear
+        
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+       
 
     }
     
@@ -82,16 +89,36 @@ navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resource
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ForumTableViewCell
         let post = posts[indexPath.row]
         if (indexPath.row == self.posts.count-1) {
             cell.separatorInset = UIEdgeInsetsMake(0, cell.bounds.size.width, 0, 0);
         }
-        cell.textLabel?.text = post.title
-        cell.detailTextLabel?.text = post.addedByUser
+        if post.dateAdded != nil{
+            let calendar = Calendar.current
+            if days(from: post.dateAdded) > 28{
+                timeLabelText = "More than a month ago"
+            }else if days(from: post.dateAdded) > 21{
+                timeLabelText = "3 weeks ago"
+            }else if days(from: post.dateAdded) > 14{
+                timeLabelText = "2 weeks ago"
+            }else if days(from: post.dateAdded) > 7{
+                timeLabelText = "A week ago"
+            }else if days(from: post.dateAdded) > 1{
+                timeLabelText = "\(days(from: post.dateAdded)) days ago"
+            }else if days(from: post.dateAdded) < 1{
+                timeLabelText = "Today at \(calendar.component(.hour, from: post.dateAdded)):\(calendar.component(.minute, from: post.dateAdded))"
+            }
+        }
+        cell.titleLabel.text = post.title
+        cell.authorLabel.text = post.addedByUser
+        cell.dateLabel.text = timeLabelText
         // Configure the cell...
         
         return cell
+    }
+    func days(from date: Date) -> Int {
+        return Calendar.current.dateComponents([.day], from: date, to: Date()).day!
     }
     @objc func MoreTapped(){
         print("TOGGLE SIDE MENU")

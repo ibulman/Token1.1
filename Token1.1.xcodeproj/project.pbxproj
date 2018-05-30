@@ -19,6 +19,7 @@
 		8A14D39B20BDE51F00BF1B6C /* EasyCast1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D39220BDE51F00BF1B6C /* EasyCast1.1.swift */; };
 		8A14D39C20BDE51F00BF1B6C /* Log1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D39320BDE51F00BF1B6C /* Log1.1.swift */; };
 		8A14D39E20BDE56400BF1B6C /* IQKeyboardManagerSwift in Resources */ = {isa = PBXBuildFile; fileRef = 8A14D39D20BDE56300BF1B6C /* IQKeyboardManagerSwift */; };
+		8A14D3A020BE24A400BF1B6C /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14D39F20BE24A400BF1B6C /* ForumTableViewCell.swift */; };
 		8A197EB2205F219E00EA7D46 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB1205F219E00EA7D46 /* User.swift */; };
 		8A197EB4205F222700EA7D46 /* Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB3205F222700EA7D46 /* Sweet.swift */; };
 		8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A197EB6205F270F00EA7D46 /* addPostViewController.swift */; };
@@ -77,6 +78,7 @@
 		8A14D39220BDE51F00BF1B6C /* EasyCast1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyCast1.1.swift; path = "../../../untitled folder 3/EasyCast1.1.swift"; sourceTree = "<group>"; };
 		8A14D39320BDE51F00BF1B6C /* Log1.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Log1.1.swift; path = "../../../untitled folder 3/Log1.1.swift"; sourceTree = "<group>"; };
 		8A14D39D20BDE56300BF1B6C /* IQKeyboardManagerSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = IQKeyboardManagerSwift; path = ../../IQKeyboardManagerSwift; sourceTree = "<group>"; };
+		8A14D39F20BE24A400BF1B6C /* ForumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
 		8A197EB1205F219E00EA7D46 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8A197EB3205F222700EA7D46 /* Sweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweet.swift; sourceTree = "<group>"; };
 		8A197EB6205F270F00EA7D46 /* addPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPostViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				8AD9CEE820B5276000E216CF /* PostViewController.swift */,
 				8A197EB6205F270F00EA7D46 /* addPostViewController.swift */,
 				8A3EFB4120B5FA7A00F299AB /* postviewCell.swift */,
+				8A14D39F20BE24A400BF1B6C /* ForumTableViewCell.swift */,
 			);
 			path = "Forum stuff";
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				8A14D39820BDE51F00BF1B6C /* TrackerViewController1.1.swift in Sources */,
 				8A236B622034B82F00336BFD /* AppDelegate.swift in Sources */,
 				8A197EB7205F270F00EA7D46 /* addPostViewController.swift in Sources */,
+				8A14D3A020BE24A400BF1B6C /* ForumTableViewCell.swift in Sources */,
 				8A236B902034B9BB00336BFD /* SideMenuVC.swift in Sources */,
 				8A3B1A4B208E39910053F468 /* LoginViewController.swift in Sources */,
 				8A14D39C20BDE51F00BF1B6C /* Log1.1.swift in Sources */,

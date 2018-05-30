@@ -16,6 +16,8 @@ struct Post {
     let addedByUser:String!
     let itemRef:DatabaseReference?
     var replies = [Reply]()
+    var dateAdded : Date!
+    let dateformatter = DateFormatter()
     
     init (title:String, content:String, addedByUser:String, key:String = "", replies: [Reply] = [] ){
         self.title = title
@@ -23,6 +25,7 @@ struct Post {
         self.content = content
         self.addedByUser = addedByUser
         self.itemRef = nil
+        self.dateAdded = Date()
     }
     
     init (snapshot:DataSnapshot){
@@ -49,9 +52,18 @@ struct Post {
         }else{
             replies = []
         }
+        if let dict = snapshot.value as? NSDictionary, let postDate = dict["dateAdded"] as? String {
+            dateformatter.dateFormat = "MM/dd/yy h:mm"
+            let postDateFinal = dateformatter.date(from: postDate)
+            dateAdded = postDateFinal
+        }else{
+            dateAdded = Date()
+        }
     }
     func toAnyObject() -> AnyObject{
-        return ["title": title, "content":content, "addedByUser": addedByUser , "replies": replies] as NSDictionary
+        dateformatter.dateFormat = "MM/dd/yy h:mm"
+        let dateAddedFinal:String  = dateformatter.string(from: dateAdded)
+        return ["title": title, "content":content, "addedByUser": addedByUser , "replies": replies, "dateAdded": dateAddedFinal] as NSDictionary
     }
 }
 
